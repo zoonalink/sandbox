@@ -1,0 +1,36 @@
+---
+title: "Wilkes - Data Visualisation in R"
+author: "p lovehagen"
+date: "2023-02-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Source and Setup
+
+[SDS 375 Data Visualisation in R](https://wilkelab.org/SDS375/)
+
+```{r}
+# first run this command:
+install.packages(
+  c(
+    "broom", "cluster", "colorspace", "cowplot", "distill", "gapminder", 
+    "GGally", "gganimate", "ggiraph", "ggdendro", "ggdist", "ggforce",
+    "ggplot2movies", "ggrepel", "ggridges", "ggthemes", "gifski", "glue",
+    "knitr", "learnr", "naniar", "margins", "MASS", "Matrix",
+    "nycflights13", "palmerpenguins", "patchwork", "rgdal", "rmarkdown",
+    "rnaturalearth", "sf", "shinyjs", "tidyverse", "transformr", "umap",
+    "xaringan"
+  )
+)
+
+# then run this command:
+install.packages(
+  "rnaturalearthhires", repos = "https://packages.ropensci.org", type = "source"
+)
+```
+
+##
