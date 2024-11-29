@@ -1,0 +1,174 @@
+---
+title: "Split datasets"
+author: "p lovehagen"
+date: "2023-04-14"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Purpose
+
+This is a function to split a data set into three partitions - `train`, `test`, `validate` data sets.
+
+It takes one argument `N` which is the number of indices, i.e. the length of the dataset.
+
+There are three optional arguments to change the proportions with default values:
+
+`train_prop` = 0.5
+
+`test_prop` = 0.25
+
+`val_prop` = 0.25
+
+## Function
+
+```{r}
+
+# set a seed for reproducibility
+set.seed(123)
+
+
+
+partition_indices <- function(N, train_prop = 0.5, test_prop = 0.25, val_prop = 0.25) {
+  
+  # Create vector of indices
+  Ind <- 1:N
+  
+  # Randomly select indices for training set
+  train_size <- round(N * train_prop)
+  trainInd <- sort(sample(Ind, train_size))
+  
+  # Create "rest" set of indices
+  rest <- setdiff(Ind, trainInd)
+  
+  # Randomly select indices for testing set
+  test_size <- round(N * test_prop)
+  testInd <- sort(sample(rest, test_size))
+  
+  # Create validation set from remaining indices
+  val_size <- length(rest) - test_size
+  valInd <- rest[-match(testInd, rest)]
+  
+  # Return a list of indices for each set
+  list(train = trainInd, test = testInd, validation = valInd)
+}
+
+```
+
+```{r}
+# function to partition datasets
+partition_indices <- function(data, train_prop = 0.5, val_prop = 0.25, test_prop = 0.25, sort_by = "time") {
+  
+  # sort data by specified column/index
+  sorted_data <- data[order(data[[sort_by]]),]
+  
+  # total number of rows in data
+  N <- nrow(data)
+  
+  # vector of indices
+  Ind <- 1:N
+  
+  # random select indices for training set
+  train_size <- round(N * train_prop)
+  trainInd <- sort(sample(Ind, train_size))
+  
+  # create "rest" set of indices
+  rest <- setdiff(Ind, trainInd)
+  
+  # randomly select indices for testing set
+  val_size <- round(N * val_prop)
+  valInd <- sort(sample(rest, val_size))
+  
+  # create validation set from remaining indices
+  test_size <- length(rest) - val_size
+  testInd <- rest[-match(valInd, rest)]
+  
+  # Return a list of indices for each set
+  list(train = trainInd,validation = valInd, test = testInd)
+}
+```
+
+## to include stratification
+
+```{r}
+library(caret)
+
+partition_indices <- function(data, target, train_prop = 0.5, val_prop = 0.25, test_prop = 0.25, stratified = FALSE) {
+  
+  # get total number of rows
+  N <- nrow(data)
+  
+  # set seed for reproducibility
+  set.seed(123)
+  
+  # create train, test, and validation sets
+  if(stratified) {
+    train_size <- round(N * train_prop)
+    test_size <- round(N * test_prop)
+    val_size <- N - train_size - test_size
+    indices <- createDataPartition(data[[target]], p = c(train_prop, val_prop, test_prop), list = FALSE, times = 1)
+    trainInd <- indices[1:train_size]
+    valInd <- indices[(train_size+1):(train_size+val_size)]
+    testInd <- indices[(train_size+val_size+1):(train_size+val_size+test_size)]
+  } else {
+    indices <- sample(1:N)
+    train_size <- round(N * train_prop)
+    val_size <- round(N * val_prop)
+    trainInd <- indices[1:train_size]
+    valInd <- indices[(train_size+1):(train_size+val_size)]
+    testInd <- indices[(train_size+val_size+1):N]
+  }
+  
+  # return a list of indices for each set
+  list(train = trainInd, validation = valInd, test = testInd)
+}
+
+```
+
+
+## How to use
+
+```{r}
+
+# Split 1000 indices into a 60/20/20 training/testing/validation split
+partitioned_indices <- partition_indices(N = 1000, train_prop = 0.6, test_prop = 0.2, val_prop = 0.2)
+
+# Access the indices for each set
+train_indices <- partitioned_indices$train
+test_indices <- partitioned_indices$test
+val_indices <- partitioned_indices$validation
+
+# Print the number of indices in each set
+cat("Number of indices in training set:", length(train_indices), "\n")
+cat("Number of indices in testing set:", length(test_indices), "\n")
+cat("Number of indices in validation set:", length(val_indices), "\n")
+
+
+```
+
+## Example
+
+Assume data frame called `sample_data`
+
+```{r}
+
+# Get number of rows in dataframe
+N <- nrow(sample_data)
+
+# call `partition_indices` function with N as the first argument
+# changed props (if needed) to 0.7, 0.2, 0.1 
+
+partitioned_indices <- partition_indices(N = nrow(sample_data), train_prop = 0.7, test_prop = 0.2, val_prop = 0.1)
+
+# `particitioned_indices` contains indices for each of the three sets which is used to extract rows from `sample_data`
+train_data <- sample_data[partitioned_indices$train, ]
+test_data <- sample_data[partitioned_indices$test, ]
+val_data <- sample_data[partitioned_indices$validation, ]
+
+
+```
+
+Result is three new dataframes which contain corresponding rows from `sample_data`

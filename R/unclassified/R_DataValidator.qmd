@@ -1,0 +1,187 @@
+---
+title: "Data Validator"
+author: "p lovehagen"
+format: html
+---
+
+## Libraries and data
+
+```{r}
+library(assertr)
+library(dplyr)
+library(data.validator)
+
+df_iris <- read.csv("iris.csv")
+head(df_iris)
+```
+
+```{r}
+colnames(df_iris) <- c("sepal.length", "sepal.width", "petal.length", "petal.width", "variety")
+df_iris$variety <- gsub("Iris-", "", df_iris$variety)
+head(df_iris)
+
+```
+## Data checks
+
+* No missing values (NA)
+* Column value has to be within a range, e.g. 0 and 10 for `sepal.width` and `sepal.length`
+
+```{r}
+
+
+
+# A custom function that returns a predicate
+between <- function(a, b) {
+  function(x) {
+    a <= x & x <= b
+  }
+}
+
+# Load the iris dataset
+data("iris")
+
+# Initialize the report
+report <- data_validation_report()
+
+# Add validation to the report 
+validate(data = iris, description = "Iris Dataset Validation Test") %>%
+  validate_cols(predicate = in_set(c("setosa", "virginica", "versicolor")), column = "Species", description = "Correct species category") %>%
+  validate_cols(predicate = not_na, columns = c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width", "Species"), description = "No missing values") %>%
+  validate_cols(predicate = between(0, 10), column = "Sepal.Length", description = "Column Sepal.Length between 0 and 10") %>%
+  validate_cols(predicate = between(0, 10), column = "Sepal.Width", description = "Column Sepal.Width between 0 and 10") %>%
+  add_results(report = report)
+
+# Print the report
+print(report)
+
+
+```
+
+```{r}
+save_report(report)
+browseURL("validation_report.html")
+```
+
+```{r}
+save_report(report, ui_constructor = render_raw_report_ui)
+browseURL("validation_report.html")
+```
+
+
+```{r}
+save_results(report, "results.csv")
+```
+
+```{r}
+save_summary(report, "validation_log.txt")
+```
+
+## Data Validation and Automated Reporting in R Shiny
+
+
+Possible to upload a CSV file and get a validation report in return
+
+
+
+```{r}
+
+library(shiny)
+library(data.validator)
+library(assertr)
+#library(dplyr)
+library(magrittr)
+
+# data.validator helper function
+between <- function(a, b) {
+  function(x) {
+    ifelse(!is.na(x), a <= x & x <= b, FALSE)
+  }
+}
+
+ui <- fluidPage(
+  titlePanel("Appsilon's data.validator Shiny Example"),
+  sidebarLayout(
+    sidebarPanel(
+      fileInput(inputId = "dataFile", label = "Choose CSV File", multiple = FALSE, accept = c(".csv")),
+      checkboxInput(inputId = "header", label = "Data has a Header row", value = TRUE)
+    ),
+    mainPanel(
+      tableOutput(outputId = "datasetHead"),
+      uiOutput(outputId = "validation")
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  # Store the dataset as a reactive value
+  data <- reactive({
+    req(input$dataFile)
+
+    tryCatch(
+      {
+        df <- read.csv(file = input$dataFile$datapath, header = input$header)
+      },
+      error = function(e) {
+        stop(safeError(e))
+      }
+    )
+  })
+
+  # Render the table with the first 5 rows
+  output$datasetHead <- renderTable({
+    return(head(data(), 5))
+  })
+  
+validation_report <- reactive({
+  data_validation_report() %>%
+    validate(data(), description = "Iris Dataset Validation Test") %>%
+    validate_cols(in_set(c("Setosa", "Virginica", "Versicolor")), variety, description = "Correct species category") %>%
+    validate_cols(predicate = not_na, sepal.length:variety, description = "No missing values") %>%
+    validate_cols(predicate = between(0, 10), sepal.length, description = "Column sepal.length between 0 and 10") %>%
+    validate_cols(predicate = between(0, 10), sepal.width, description = "Column sepal.width between 0 and 10") %>%
+    validate_cols(predicate = between(0, 10), petal.length, description = "Column petal.length between 0 and 10") %>%
+    validate_cols(predicate = between(0, 10), petal.width, description = "Column petal.width between 0 and 10")
+})
+
+output$validation <- renderUI({
+  render_semantic_report_ui(get_results(validation_report()))
+})
+
+}
+
+shinyApp(ui = ui, server = server)
+
+
+```
+
+
+```{r}
+library(shiny)
+library(data.validator)
+library(magrittr)
+library(assertr)
+
+ui <- fluidPage(
+  uiOutput("validation")
+)
+
+server <- function(input, output, session) {
+  report <- data_validation_report()
+  validate(mtcars, name = "Verifying cars dataset") %>%
+    validate_if(drat > 0, description = "Column drat has only positive values") %>%
+    validate_cols(in_set(c(0, 2)), vs, am, description = "vs and am values equal 0 or 2 only") %>%
+    validate_cols(within_n_sds(1), mpg, description = "mpg within 1 sds") %>%
+    validate_rows(num_row_NAs, within_bounds(0, 2), vs, am, mpg, description = "not too many NAs in rows") %>%
+    validate_rows(maha_dist, within_n_mads(10), everything(), description = "maha dist within 10 mads") %>%
+    add_results(report)
+
+  output$validation <- renderUI({
+    render_semantic_report_ui(get_results(report))
+  })
+}
+
+shinyApp(ui, server)
+```
+
+
+

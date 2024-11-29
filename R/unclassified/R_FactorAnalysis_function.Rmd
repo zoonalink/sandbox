@@ -1,0 +1,130 @@
+---
+title: "R_FactorAnalysis_function"
+author: "p lovehagen"
+date: "2023-03-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r packages, include = FALSE}
+# psych is used for factor analysis
+if(!require(psych)){
+    install.packages("psych", repos = "https://www.stats.bris.ac.uk/R/")
+    library(psych)
+}
+# GPArotation is Gradient Projection Algorithm Rotation for FA
+if(!require(GPArotation)){
+    install.packages("GPArotation", repos = "https://www.stats.bris.ac.uk/R/")
+    library(GOArotation)
+}
+# corrplot visualises correlation matrices
+if(!require(corrplot)){
+    install.packages("corrplot", repos = "https://www.stats.bris.ac.uk/R/")
+    library(corrplot)
+}
+# ade4 is used for visualising and analysing pca
+if(!require(ade4)){
+    install.packages("ade4", repos = "https://www.stats.bris.ac.uk/R/")
+    library(ade4)
+}
+# factoextra extracts and visualises results of multivariate data analyses
+if(!require(factoextra)){
+    install.packages("factoextra", repos = "https://www.stats.bris.ac.uk/R/")
+    library(factoextra)
+}
+# paran applies Horn's Test of Principal Components / Factors
+if(!require(paran)){
+    install.packages("paran", repos = "https://www.stats.bris.ac.uk/R/")
+    library(paran)
+}
+# ggplot2 is used to visualise
+
+if(!require("ggplot2")){
+  install.packages("ggplot2", repos = "https://www.stats.bris.ac.uk/R/")
+  library(ggplot2)
+}
+```
+
+## TODO
+
+* add print statements to explain output
+* add line breaks to make it more legible
+* workout how to extract variables after running function
+
+## Purpose
+
+This is a function to allow for repeated `factor analysis`
+
+It requires that there are no missing values in the dataframe
+
+
+
+## Function inputs
+
+* data = dataset
+* num_factors = 3 is default
+* rotation_method = "varimax" is default, options include "none", "varimax", "quartimax", "bentlerT", "equamax", "varimin", "geominT" and "bifactor" are orthogonal rotations. "Promax", "promax", "oblimin", "simplimax", "bentlerQ, "geominQ" and "biquartimin" and "cluster" 
+* fm = "ml" is default (maximum likelihood factor analysis); options include "uls", "minres", "ols", "gls", "wls" - check help()
+* scores = "regression" is default", options = "Thurstone", "tenBerge", "Anderson", "Bartlett" - see help()
+* exclude_cols = NULL is default
+* cutoff = 0.3 is default
+
+## How it works
+
+1. excludes columns in exclude_cols parameter, if provided
+2. runs factor analysis (`fa()`) with parameters
+3. prints loadings which are greater than `cutoff`
+4. prints variance accounted for by each factor
+5. prints communalities
+6. plots biplot 
+
+```{r}
+
+# function to run fa
+library(psych)
+
+run_fa <- function(data, num_factors, rotation_method = "varimax", fm = "ml", scores = "regression", exclude_cols = NULL, cutoff = 0.3) {
+  
+  # remove columns specified in exclude_cols parameter
+  if (!is.null(exclude_cols)) {
+    data <- data[, !(colnames(data) %in% exclude_cols)]
+  }
+  
+  # run factor analysis using specified method and rotation
+  fa_obj <- fa(data, nfactors = num_factors, rotate = rotation_method, fm = fm, 
+               scores = scores)
+  
+  # print factor loadings greater than or equal to the cutoff
+  print(fa_obj$loadings[abs(fa_obj$loadings) >= cutoff])
+  
+  # print variance accounted for by each factor
+  print(fa_obj$Vaccounted)
+  
+  # print communalities
+  print(fa_obj$communalities)
+  
+  # create biplot of factor loadings and factor scores
+  biplot.psych(fa_obj, main = paste("rotation:", rotation_method, ",", num_factors, "factors"))
+}
+
+
+```
+## Example
+
+```{r}
+
+# data
+USstates<- read.table("./_data/USstates.txt", header = TRUE) 
+tmp <- USstates[, 2:9] 
+rownames(tmp) <- USstates[, 1]
+USstates <- tmp 
+rm(tmp) 
+
+# factor analysis
+excluded_cols <- c("Population", "Area", "Frost")
+fa_obj <- run_fa(USstates, 3, exclude_cols = excluded_cols)
+
+```

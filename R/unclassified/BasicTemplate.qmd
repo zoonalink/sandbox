@@ -1,0 +1,527 @@
+---
+title: "Example PCA/FA"
+author: "p lovehagen"
+date: "16 Feb 2023"
+format: 
+  html:
+    toc: true
+    toc-depth: 2
+    toc-title: "contents"
+    code-fold: true
+    code-line-numbers: true
+    number-sections: true
+editor: visual
+---
+
+# Plan {#sec-plan}
+
+0.  ~~Load necessary packages~~
+1.  ~~Check for missing values~~
+2.  ~~Summary statistics~~
+3.  ~~Correlation plots~~
+4.  ~~Scatter plots~~
+5.  ~~Histograms~~
+6.  ~~Formal tests of correlation~~
+7.  ~~Measure of sample adequacy (MSA) - in particular for Factor Analysis~~
+8.  ~~Parallel Analysis to determine the number of components / factors to keep~~
+9.  PCA
+10. FA with different rotations - at least one should be orthogonal, one non-orthogonal. (is it worth keeping the non-orthog). linear, general linear, generalised linear, generalised additive (no longer linear), etc. assumptions
+
+# Load Packages {#sec-load-packages}
+
+The code block below checks whether the required package is installed and installs it if it isn't, and then loads the library.
+
+Echo, warning and message have been set to `false.`
+
+Check that this list is correct and complete for the remainder of the document.
+
+```{r}
+#| label: packages
+#| echo: false
+#| warning: false
+#| message: false
+
+# psych is used for factor analysis
+if(!require(psych)){
+    install.packages("psych", repos = "https://www.stats.bris.ac.uk/R/")
+    library(psych)
+}
+
+# GPArotation is Gradient Projection Algorithm Rotation for FA
+if(!require(GPArotation)){
+    install.packages("GPArotation", repos = "https://www.stats.bris.ac.uk/R/")
+    library(GOArotation)
+}
+
+# corrplot visualises correlation matrices
+if(!require(corrplot)){
+    install.packages("corrplot", repos = "https://www.stats.bris.ac.uk/R/")
+    library(corrplot)
+}
+
+# ade4 is used for visualising and analysing pca
+if(!require(ade4)){
+    install.packages("ade4", repos = "https://www.stats.bris.ac.uk/R/")
+    library(ade4)
+}
+
+# factoextra extracts and visualises results of multivariate data analyses
+if(!require(factoextra)){
+    install.packages("factoextra", repos = "https://www.stats.bris.ac.uk/R/")
+    library(factoextra)
+}
+
+# paran applies Horn's Test of Principal Components / Factors
+if(!require(paran)){
+    install.packages("paran", repos = "https://www.stats.bris.ac.uk/R/")
+    library(paran)
+}
+
+# ggplot2 is used to visualise
+if(!require("ggplot2")){
+  install.packages("ggplot2", repos = "https://www.stats.bris.ac.uk/R/")
+  library(ggplot2)
+}
+
+# ggfortify are data vis tools for statistical analysis results
+if(!require("ggfortify")){
+  install.packages("ggfortify", repos = "https://www.stats.bris.ac.uk/R/")
+  library(ggfortify)
+}
+
+# flextable has functions for tabular reporting
+if(!require("flextable")){
+  install.packages("flextable", repos = "https://www.stats.bris.ac.uk/R/")
+  library(flextable)
+}
+
+#rstatix is a pipe-friendly framework for basic statistical tests
+if(!require(rstatix)){
+  install.packages("rstatix", repos = "https://www.stats.bris.ac.uk/R/")
+}
+  library(rstatix)
+
+```
+
+# Data {#sec-data}
+
+## Load {#sec-load-data}
+
+The code block below loads the dataset which will be used in the rest of the document.
+
+In this example, we will look at US States data and the prep steps are:
+
+1.  Import data
+2.  Inspect data
+3.  Make first column (state names) the RowNames
+4.  Tidy up
+
+```{r}
+#| label: loadingdata
+#| echo: true
+
+#across folder(.), default is 'fixed width'
+USstates<- read.table("./TemplateData/USstates.txt", header = TRUE) 
+
+#str(USstates)
+#head(USstates)
+
+tmp<- USstates[,2:9] #temp data without states
+rownames(tmp)<-USstates[,1] # take state names into rownames of tmp
+USstates<-tmp #make 'states' column in USstates
+rm(tmp) #remove temp var
+
+
+```
+
+## Missing data {#sec-missing-data}
+
+We need to check for missing data. There are many ways of doing this; in this example, we are simply summing `na` values in the dataset.
+
+There are no missing data in this dataset.
+
+```{r}
+#| label: missing
+any(is.na(USstates))
+#sum(is.na(USstates))
+#colSums(is.na(USstates))
+#rowSums(is.na(USstates))
+
+```
+
+There are `r sum(is.na(USstates))` missing values in this dataset. Therefore we are good to proceed.
+
+# Analysis {#sec-analysis}
+
+## Summary Statistics {#sec-summary-stats}
+
+In @sec-load-data the data was loaded and checked for missing values.
+
+Below are some summary statistics of the dataset. This section will depend on the dataset and the findings, in terms of techniques and what is shown.
+
+```{r}
+summary(USstates)
+# selective display of summary statistics
+describe(USstates)[,c(2:5,8,9)]
+```
+
+## Correlation Pairs {#sec-pairs}
+
+```{r}
+corrplot(cor(USstates), tl.col = 'black', type = 'lower', diag = FALSE)
+```
+
+```{r}
+pairs.panels(USstates)
+```
+
+What can we say about the data which isn't in the table? \* Highlight interesting observations \* Highlight possible issues \* Highlight areas to explore further
+
+There appear to be some non-linear relationships. `Population` and `Area` are skewed with `Area` having significant outliers.\
+`Population` has a wide range - 365 to 21198. `Murder rate` and `literacy` also have wide ranges.
+
+This may be a problem for Factor Analysis.
+
+Note that `Population` and `Area` can be used to create new variables which are perhaps better for the analysis: \* Murder per capita \* Income per capita \* State population density instead of `Area` and `Population` - i.e. $Population/Area$
+
+## Kaiser-Meyer-Olkin {#sec-KMO}
+
+Kaiser-Meyer-Olkin (KMO) is a statistic used to assess the sampling adequacy for factor analysis. It measures the proportion of variance in observed variables which can be attributed to underlying factors; it ranges from 0-1 with values nearer 1 more suited to factor analysis.
+
+KMO steps:
+
+1.  Correlation matrix computed
+2.  Partial correlation matrix computed by removing effects of other variables on each pair of variables. (So that KMO measures variance proportion which is not shared)
+3.  KMO statistic calculated as ratio of sum of squared partial correlations to sum of squared correlations plus sum of squared partial correlations
+4.  KMO statistic interpretation:
+
+-   greater than 0.9 are considered "marvelous"; observed variables are well-suited for factor analysis.
+-   between 0.8 and 0.9 are considered "meritorious"; observed variables are suitable for factor analysis.
+-   between 0.7 and 0.8 are considered "middling"; some of the observed variables are not well-suited for factor analysis.
+-   between 0.6 and 0.7 are considered "mediocre"; the observed variables are not well-suited for factor analysis.
+-   less than 0.6 are considered "miserable"; observed variables are not suitable for factor analysis.
+
+In practice - if the overall KMO is greater than 0.5, it indicates that the dataset has sufficient correlation to warrant PCA / FA. However, `Area` may be of concern as it is much lower than the other variables.
+
+```{r}
+KMO(USstates)
+#KMO(USstates)$MSA
+```
+
+In this case, the Overall KMO MSA is `r KMO(USstates)$MSA` so we will proceed, but cautiously.
+
+## Scree {#sec-scree}
+
+The scree plot visualises the variance explained by each principal component or factor. It plots eigenvalues of factors/components in decreasing order, against the number of factors/components.
+
+One way of determining how many factors to keep is at the 'elbow' of the plot - i.e. where the eigenvalues start leveling off.
+
+Another way is to keep factors/components with an eigenvalue greater than 1 as this represents more variance than a single observed variable.
+
+The plot suggests one or two factors/components.
+
+```{r}
+#| label: ScreePlot
+#| fig-cap: "Scree Plot"
+## type your code here
+scree(USstates)
+```
+
+## Parallel Analysis {#sec-paran}
+
+Parallel analysis is a statistical method to determine number of factors or components to retain in FA and PCA.
+
+It compares observed eigenvalues with expected eigenvalues obtained from a random data matrix with the same size an correlation structure as the original data.
+
+Essentially, eigenvalues from simulated data represent expected distribution of eigenvalues for random data, and are used as a reference to determine how many factors/components to keep. Factors or components with eigenvalues above expected eigenvalues from random data are considered 'significant' and should be retained.
+
+Below, we have run `paran()` from `psych` package which returns a vector of expected eigenvalues which can be compared to the observed eigenvalues.
+
+The centile argument specifies percentile to use - 95 - which means that expected eigenvalues are calculated based on the 95th centile of the distribution of eigenvalues from the random data matrix. This is relatively conservative.
+
+It is suggested that two components are retained, which aligns with plot above.
+
+```{r}
+paran(USstates,iterations=5000, centile=95) # more conservative approach
+```
+## Scaling {#sec-scaling}
+
+It is common practice to scale (standardise) the input data before analysis.  This is to ensure that all variables have a similar range and variability, avoid problems related to measurement units or scales of variables, and allow for adding more data in the future.
+
+This can be done by transforming the data to have zero mean and unit variance - known as `z-score standardisation` - which is achieved by subtracting the mean of each variable from the data and then dividing by the standard deviation of the variable.  
+
+It can be more appropriate to centre the data without scaling to unit variance - known as `mean centring` - which is achieved by subtracting the mean of each variable without dividing by the standard deviation.
+
+Z-score standardisation is useful when the range and variability of the variables are important and when comparing the relative importance of different variables in the analysis.
+
+Mean centring is useful when teh absolute values of the variables are not important and when comparing the correlations or covariances between variables. 
+
+`scale()` can be used to do either.
+
+Below the code does: 
+
+1. calculate and store column means
+2. calculate mean-centred version of dataset by subtracting mean from each row.  matrix is transposed to keep observations in rows.
+3. calculate standard deviation of each variable in 'mean centred' data, with degree of freedom correction (-1)
+4. scale mean-centred data by dividing each row with standard deviation and transposing matrix.
+
+The resulting matrix should have a mean of zero for each variable, which is often an assumption for FA and PCA algorithms.  Scaling means that each variable is treated equally in the analysis.  
+
+```{r}
+# calculates column means and store in 'm'
+m<- colMeans(USstates) 
+
+# calculates mean-centred version of 'USstates' by subtracting mean (m) from each row of data.  Matrix is transposed so that observations are still in rows and variables in columns. 
+MeanCentred<-t(apply(USstates, 1, function(x){x-m})) 
+
+#display dimensions (rows, cols) 
+#dim(MeanCentred)
+
+
+# calculates standard deviation of each variable in 'MeanCentred' using formula for SD with deg of freedom correction.
+s<-apply(MeanCentred, 2, function(x){sd(x)*(length(x)-1)/length(x)})
+
+# scales mean-centred data by dividing each row of 'MeanCentred' by corresponding SD in 's.'  Then it is transposed so that observations are still in rows and variables are in columns.
+ScaledData<- t(apply(MeanCentred, 1, function(x){x/s}))
+
+# dimensions
+dim(ScaledData)
+
+# summary statistics 
+summary(ScaledData)
+
+
+```
+
+The below function `scale()` achieves the same outcome (with slight variation due to calculation method and degree of freedom)
+
+```{R}
+ScaledData2 <- scale(USstates, center = TRUE, scale = TRUE)
+
+dim(ScaledData2)
+summary(ScaledData2)
+
+```
+```{r}
+# covariance matrix - shows linear relationships between variables - non-linear relationships may not be apparent
+cov(ScaledData)
+
+
+```
+
+# PCA {#sec-pca}
+
+Below we use `dudi.pca` to perform the PCA.  `scannf = F` means no scree plot; `nf = 8` is how many principal components to extract.  
+
+dudi.pca means-centres the columns internally (but does not scale), so the results are similar.
+
+Eight components is far too many - we know that we want two from earlier analysis see @sec-scree
+
+```{r}
+# PCA, no scree plot, 8 components
+USpca<-dudi.pca(USstates, scannf = F, nf=3)
+
+# extract eigenvalues
+get_eigenvalue(USpca)
+
+# extract first two principal components
+USpca$c1[,1:2] 
+
+fviz_pca_biplot(USpca, repel=T)
+
+# PCA on scaled data, no scree plot, 8 components
+#USpca2<-dudi.pca(ScaledData, scannf = F, nf=8)
+
+# extract eigenvalues
+#get_eigenvalue(USpca2)
+
+# extract first two principal components
+#USpca2$c1[,1:2] 
+
+```
+We can see that two components explain approximately 65% of the variance. 
+
+An alternative method is using `princomp()`: 
+
+```{r}
+
+USpca3 <- princomp(ScaledData, cor=T)
+summary(USpca3)
+plot(USpca3, type='l')
+fviz_pca_biplot(USpca3, repel=T)
+
+```
+This summary outputs the `standard deviation` of the scores of each observation on each principal component.  
+
+SD can be used as a measure of the importance of each PC as it reflects the degree of variation in the data that is captured by that component.  PCs with larger standard deviatoins explain more variation in the data and are therefore more important.
+
+# Factor Analysis {#sec-FA}
+
+## Default {#sec-defaultFA}
+
+Below we perform default FA on the dataset.  Default FA uses maximum likelihood for factor extraction and Promax rotation to get a simpler factor solution.  
+
+The biplot shows factor loadings and factor scores for the default FA - allowing visualisation between variables and factors.  
+
+```{r}
+## use function fa
+
+#KMO(USstates)
+defaultFA<-fa(USstates)
+
+biplot.psych(defaultFA,main="default settings")
+
+
+
+```
+## Two factor, No rotation {#sec-fa-no-rotation}
+
+Below is another FA where we have specified 2 factors (as discovered earlier) and no rotation.
+
+This is plotted to show the relationship between the variables and the two factors obtained by FA.
+
+```{r}
+# FA with 2 factors, no rotation
+USfa2<-fa(USstates,2,rotate="none")
+biplot.psych(USfa2,main="no rotation, 2 factors")
+```
+The `communalities` output provides information about how much variance in each variable is explained by the factors extracted in the analysis - a measure of how much each variable contributes to the factors.  Communalities are the proportion of variance in each variable that is accounted for by all factors together.  Higher communalities indicate a larger portion of the variance is explained by the factors.
+
+Factor analysis explained a relatively high proportion of the variance in `Murder`, `Illiteracy`, and `HSGrad`.
+
+`Population` has low communality, suggesting that the FA did not explain much of the variance in these variables. 
+
+Communalities for `Income`, `Frost` and `LifeExp` are medium
+
+
+The `loadings` output shows the strength and direction of the relationship between each variable and the factors.  Loadings are the correlations between the variables and the factors, indicating degree to which ech variable contributes to the factors.  High loadings indicate that a variable is strongly associated with a factor.
+
+We can see that `Income`, `HSGrad` and `Murder` have high loadings on the first factor (MR1); `Illiteracy`, `LifeExp`, and `Frost` have high loadings on the second factor (MR2); `Area` only loads on MR2.
+
+MR1 may represent a factor related to economic prosperity, urbanisation, etc.
+MR2 may represent a factor related to climate, health...
+
+```{r}
+
+USfa2$communalities
+
+USfa2$loadings
+
+```
+## Orthogonal {sec-ortho}
+
+Factor analysis with Varimax rotation and 2 factors.  
+
+`Murder` has the highest communality - it shares the most variance with the other variables - most well suited for inclusion.  `Area` and `Frost` have low communalities and don't share much variance - possibly not useful for inclusion.
+
+
+
+```{r}
+
+USfa3<-fa(USstates,2,rotate="varimax")
+biplot.psych(USfa3,main="rotation: varimax, 2 factors")
+
+USfa3$communalities
+USfa3$loadings
+
+```
+
+There is a warning about the estimation method, so trying `fm = "regression"`, `PAF`, `minres` - these also had warnings.  It may simply mean that factor scores may not be as accurate as they could be.
+
+```{r}
+USfa4 <- fa(USstates, 2, rotate="varimax", fm = "PAF")
+biplot.psych(USfa4, main="rotation: varimax, 2 factors")
+USfa4$communalities
+USfa4$loadings
+```
+
+
+
+## Oblique {#sec-oblique}
+
+```{r}
+
+USfa5<-fa(USstates,2,rotate="bentlerT")
+biplot.psych(USfa4,main="rotation: bentlerT, 2 factors")
+
+USfa5$communalities
+USfa5$loadings
+```
+
+```{r}
+
+USfa6<-fa(USstates,2,rotate="Promax")
+biplot.psych(USfa4,main="rotation: Promax, 2 factors")
+
+USfa6$communalities
+USfa6$loadings
+```
+
+# FA2 {#sec-FA2}
+
+I am going to try to do a factor analysis and exclude some of the variables (population and area).
+
+## Prep dataset {#sec-prep-dataset}
+
+```{r}
+
+USstates_fa <- USstates[, c("Income", "Illiteracy", "LifeExp", "Murder", "HSGrad", "Frost")]
+```
+
+```{r}
+
+US2fa <- fa(USstates_fa, nfactors = 2, rotate = "varimax")
+
+biplot.psych(US2fa,main="rotation: varimax, 2 factors")
+
+US2fa$communalities
+US2fa$loadings
+```
+```{r}
+
+# function to run fa
+library(psych)
+
+run_fa <- function(data, num_factors, rotation_method = "varimax", fm = "ml", method = "regression", scores = "regression", exclude_cols = NULL, cutoff = 0.3) {
+  
+  # remove columns specified in exclude_cols parameter
+  if (!is.null(exclude_cols)) {
+    data <- data[, !(colnames(data) %in% exclude_cols)]
+  }
+  
+  # run factor analysis using specified method and rotation
+  fa_obj <- fa(data, nfactors = num_factors, rotate = rotation_method, fm = fm, 
+               method = method, scores = scores)
+  
+  # print factor loadings greater than or equal to the cutoff
+  print(fa_obj$loadings[abs(fa_obj$loadings) >= cutoff])
+  
+  # print variance accounted for by each factor
+  print(fa_obj$Vaccounted)
+  
+  # print communalities
+  print(fa_obj$communalities)
+  
+  # create biplot of factor loadings and factor scores
+  biplot.psych(fa_obj, main = paste("rotation:", rotation_method, ",", num_factors, "factors"))
+}
+
+
+```
+
+```{r}
+# 
+excluded_cols <- c("Population", "Area", "Frost")
+fa_obj <- my_fa(USstates, 2, cutoff, "varimax", excluded_cols)
+
+```
+
+
+# Next steps
+
+could look at creating some new variables: 
+
+population density
+income by pop 
+murder by pop 
+

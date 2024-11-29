@@ -1,0 +1,111 @@
+---
+title: "corrplot vignette explore"
+author: "p lovehagen"
+date: "2023-02-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, error = TRUE)
+```
+
+## Intro
+
+<span style="color: red;">This is based on fa_tuto.rmd</span>
+
+First you will need to load, and potentially install the new packages that we are using today: `psych` and `GPArotation` and `paran`. The following code load the 5 libraries needed today and install them if needed (i.e. only if they are not already installed on the computer)
+
+```{r, warning=FALSE, message=FALSE}
+if(!require(psych)){
+    install.packages("psych", repos = "https://www.stats.bris.ac.uk/R/")
+    library(psych)
+}
+
+if(!require(GPArotation)){
+    install.packages("GPArotation", repos = "https://www.stats.bris.ac.uk/R/")
+    library(GOArotation)
+}
+
+if(!require(corrplot)){
+    install.packages("corrplot", repos = "https://www.stats.bris.ac.uk/R/")
+    library(corrplot)
+}
+
+if(!require(ade4)){
+    install.packages("ade4", repos = "https://www.stats.bris.ac.uk/R/")
+    library(ade4)
+}
+
+if(!require(factoextra)){
+    install.packages("factoextra", repos = "https://www.stats.bris.ac.uk/R/")
+    library(factoextra)
+}
+
+if(!require(paran)){
+    install.packages("paran", repos = "https://www.stats.bris.ac.uk/R/")
+    library(paran)
+}
+```
+
+## Birds
+
+We are going to use a dataset that we already saw in the PCA
+
+```{r}
+databird<-read.table("../data/birds.txt", h=T,sep="\t") # read tab separated table with headers
+colnames(databird)<-c("total", "alar", "beakandhead", "humerus", "keel") #add colnames
+```
+
+1.  Using `summary` describe the dataset
+
+```{r description, echo=FALSE}
+# type your code here
+summary(databird) # basic summary stats for each variable
+which(is.na(rowSums(databird))) # which rows (if any) have missing data? by summing rows of is.na.  which returns Trues (i.e. where = 1)
+which(!complete.cases(databird)) # returns logical vector where case is complete
+
+databird<-databird[complete.cases(databird),] # only use complete cases
+
+```
+
+2.  The `psych` package offer a new function called `describe`, what does it tell you?
+
+```{r}
+#  look for help using ?describe
+describe(databird,skew=FALSE)
+```
+the sd, se suggest that the birds are similar
+49 observations
+
+
+
+3.  Plot the correlation matrix using `corrplot` as in the previous tutorial.
+
+```{r}
+## type your code here
+corrplot(cor(databird))
+prettybirds<-databird
+colnames(prettybirds) <- c("Total", "Alar", "Beak and Head", "Humerus", "Keel")
+b <-cor(prettybirds)
+#improvements - change text colour, labels, table col names
+corrplot(b)
+corrplot(b, order = 'AOE') # after 'AOE' reorder
+corrplot(b, method = 'number') # colorful number
+corrplot(b, method = 'color', order = 'alphabet')
+corrplot(b, method = 'shade', order = 'AOE', diag = FALSE)
+corrplot(b, method = 'square', order = 'FPC', type = 'lower', diag = FALSE)
+corrplot(b, method = 'ellipse', order = 'AOE', type = 'upper')
+corrplot.mixed(b, order = 'AOE')
+corrplot.mixed(b, lower = 'shade', upper = 'pie', order = 'hclust', tl.col = 'black')
+```
+
+```{r}
+prettybirds<-databird
+colnames(prettybirds) <- c("Total", "Alar", "Beak and Head", "Humerus", "Keel")
+corrplot(cor(databird), tl.col = "black", type = "lower")
+
+# for options have a look at vignettes at cran corrplot

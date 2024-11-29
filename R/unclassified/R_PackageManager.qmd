@@ -1,0 +1,92 @@
+---
+title: "Package Managers in R - packrat, renv"
+author: "P Lovehagen"
+date: 2023-02-25
+date-modified: "`r format(Sys.time(), '%Y-%m-%d')`"
+tags: [R, process, package manager]
+output:
+  quarto::html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    code:
+      wrap: true
+      eval: false
+    css: "./ProcessStyle.css"
+---
+
+## **Packrat**
+
+**`packrat`** is a package manager for R that allows you to create isolated, project-specific libraries of R packages. This can be useful for ensuring that your R code is reproducible across different environments and for managing dependencies for different projects. Here are the basic steps for using **`packrat`**:
+
+### **Step 1: Initialize a `packrat` Project**
+
+In your R project directory, run the following command to initialize a **`packrat`** project:
+
+```{r}
+codepackrat::init()
+```
+
+This will create a new directory called **`packrat`** in your project directory that will store all of the R packages that your project depends on.
+
+### **Step 2: Install Packages**
+
+To install R packages into your project-specific library, you can use the **`packrat::install()`** function. For example, to install the **`ggplot2`** package, you can run the following command:
+
+```{r}
+codepackrat::install("ggplot2")
+```
+
+This will download and install the **`ggplot2`** package into your project-specific library.
+
+### **Step 3: Manage Dependencies**
+
+To manage dependencies for your project, you can use the **`packrat::snapshot()`** function to create a snapshot of your project-specific library. This snapshot can be shared with others or used to recreate your project environment on a different machine. For example, to create a snapshot of your project library, you can run the following command:
+
+```{r}
+codepackrat::snapshot()
+```
+
+This will create a file called **`packrat.lock`** in your project directory that lists all of the R packages that your project depends on.
+
+### **Step 4: Restore the Project Environment**
+
+To restore your project environment on a different machine or after updating R, you can use the **`packrat::restore()`** function. This will install all of the R packages listed in the **`packrat.lock`** file into your project-specific library. For example:
+
+```{r}
+codepackrat::restore()
+```
+
+## **Renviron**
+
+**`renv`** is another package manager for R that can help you manage your R package dependencies and ensure reproducibility across different environments. **`renv`** is similar to **`packrat`**, but it also includes additional features like support for Git-backed package sources and integration with continuous integration systems. Here are the basic steps for using **`renv`**:
+
+### **Step 1: Initialize a `renv` Project**
+
+In your R project directory, run the following command to initialize a **`renv`** project:
+
+```{r}
+coderenv::init()
+```
+
+This will create a new directory called **`.renv`** in your project directory that will store all of the R packages that your project depends on.
+
+### **Step 2: Install Packages**
+
+To install R packages into your project-specific library, you can use the **`renv::install()`** function. For example, to install the **`ggplot2`** package, you can run the following command:
+
+```{r}
+coderenv::install("ggplot2")
+```
+
+This will download and install the **`ggplot2`** package into your project-specific library.
+
+### **Step 3: Manage Dependencies**
+
+To manage dependencies for your project, you can use the **`renv::snapshot()`** function to create a snapshot of your project-specific library. This snapshot can be shared with others or used to recreate your project environment on a different machine. For example, to create a snapshot of your project library, you can run the following command:
+
+```{r}
+coderenv::snapshot()
+```
+
+This will create a file called **`renv.lock`**

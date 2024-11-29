@@ -1,0 +1,676 @@
+---
+title: "BBC Visuals"
+author: "p lovehagen"
+date: "2023-02-21"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## source
+
+**url:** [bbc.github.io](%22https://bbc.github.io/rcookbook/%22)
+
+## load libraries
+
+```{r, echo=FALSE}
+#This line of code installs the pacman page if you do not have it installed - if you do, it simply loads the package
+if(!require(pacman))install.packages("pacman")
+
+pacman::p_load('dplyr', 'tidyr', 'gapminder',
+               'ggplot2',  'ggalt',
+               'forcats', 'R.utils', 'png', 
+               'grid', 'ggpubr', 'scales',
+               'bbplot')
+```
+
+bbplot is not on CRAN - needs `devtools` for installation
+
+more info here [bbplot_github](https://github.com/bbc/bbplot)
+
+```{r, echo=FALSE}
+if(!require(devtools))install.packages('devtools')
+devtools::install_github('bbc/bbplot')
+```
+
+## package notes
+
+The package has two functions, bbc_style() and finalise_plot().
+
+bbc_style(): has no arguments and is added to the ggplot 'chain' after you have created a plot. What it does is generally makes text size, font and colour, axis lines, axis text, margins and many other standard chart components into BBC style, which has been formulated based on recommendations and feedback from the design team.
+
+Note that colours for lines in the case of a line chart or bars for a bar chart, do not come out of the box from the bbc_style() function, but need to be explicitly set in your other standard ggplot chart functions.
+
+The code below shows how the bbc_style() should be used within standard chart-production workflow. This is an example for a very simple line chart, using data from the gapminder package.
+
+```{r}
+#Data for chart from gapminder package
+line_df <- gapminder %>%
+  filter(country == "Malawi") 
+
+#Make plot
+line <- ggplot(line_df, aes(x = year, y = lifeExp)) +
+  geom_line(colour = "#1380A1", size = 1) +
+  geom_hline(yintercept = 0, size = 1, colour="#333333") +
+  bbc_style() +
+  labs(title="Living longer",
+       subtitle = "Life expectancy in Malawi 1952-2007")
+line
+```
+
+### this is what bbc_style() function does
+
+```{r}
+## function () 
+## {
+##     font <- "Helvetica"
+##     ggplot2::theme(plot.title = ggplot2::element_text(family = font, 
+##         size = 28, face = "bold", color = "#222222"), plot.subtitle = ggplot2::element_text(family = font, 
+##         size = 22, margin = ggplot2::margin(9, 0, 9, 0)), plot.caption = ggplot2::element_blank(), 
+##         legend.position = "top", legend.text.align = 0, legend.background = ggplot2::element_blank(), 
+##         legend.title = ggplot2::element_blank(), legend.key = ggplot2::element_blank(), 
+##         legend.text = ggplot2::element_text(family = font, size = 18, 
+##             color = "#222222"), axis.title = ggplot2::element_blank(), 
+##         axis.text = ggplot2::element_text(family = font, size = 18, 
+##             color = "#222222"), axis.text.x = ggplot2::element_text(margin = ggplot2::margin(5, 
+##             b = 10)), axis.ticks = ggplot2::element_blank(), 
+##         axis.line = ggplot2::element_blank(), panel.grid.minor = ggplot2::element_blank(), 
+##         panel.grid.major.y = ggplot2::element_line(color = "#cbcbcb"), 
+##         panel.grid.major.x = ggplot2::element_blank(), panel.background = ggplot2::element_blank(), 
+##         strip.background = ggplot2::element_rect(fill = "white"), 
+##         strip.text = ggplot2::element_text(size = 22, hjust = 0))
+## }
+## <environment: namespace:bbplot>
+```
+
+these settings can be modified by calling `theme` function with desired arguments, but it must be called *after* `bbc_style`
+
+this will add gridlines:
+
+```{r}
+theme(panel.grid.major.x = element_line(color="#cbcbcb"), 
+        panel.grid.major.y=element_blank())
+```
+
+## save finished out put
+
+After adding the `bbc_style()` to your chart there is one more step to get your plot ready for publication. `finalise_plot()`, the second function of the bbplot package, will left-align the title, subtitle and add the footer with a source and an image in the bottom right corner of your plot. It will also save it to your specified location. The function has five arguments:
+
+Here are the function arguments: `finalise_plot(plot_name, source, save_filepath, width_pixels = 640, height_pixels = 450)`
+
+`plot_name`: the variable name that you have called your plot, for example for the chart example above plot_name would be "line" source: the source text that you want to appear at the bottom left corner of your plot. You will need to type the word "Source:" before it, so for example source = "Source: ONS" would be the right way to do that. `save_filepath`: the precise filepath that you want your graphic to save to, including the .png extension at the end. This does depend on your working directory and if you are in a specific R project. An example filepath would be: Desktop/R_projects/charts/line_chart.png. `width_pixels`: this is set to 640px by default, so only call this argument if you want the chart to have a different width, and specify what you want it to be. `height_pixels`: this is set to 450px by default, so only call this argument if you want the chart to have a different height, and specify what you want it to be. `logo_image_path`: this argument specifies the path for the image/logo in the bottom right corner of the plot. The default is for a placeholder PNG file with a background that matches the background colour of the plot, so do not specify the argument if you want it to appear without a logo. If you want to add your own logo, just specify the path to your PNG file. The package has been prepared with a wide and thin image in mind.
+
+Example of how the `finalise_plot()` is used in a standard workflow. This function is called once you have created and finalised your chart data, titles and added the `bbc_style()` to it:
+
+```{r}
+finalise_plot(plot_name = my_line_plot,
+              source = "Source: Gapminder",
+              save_filepath = "filename_that_my_plot_should_be_saved_to.png",
+              width_pixels = 640,
+              height_pixels = 450,
+              logo_image_path = "placeholder.png")
+```
+
+```{r}
+finalise_plot(plot_name = line,
+              source = "Source: Gapminder",
+              save_filepath = "images/line_plot_finalised_test.png",
+              width_pixels = 640,
+              height_pixels = 550)
+```
+
+## line chart
+
+```{r}
+#Prepare data
+line_df <- gapminder %>%
+  filter(country == "China") 
+
+#Make plot
+line <- ggplot(line_df, aes(x = year, y = lifeExp)) +
+  geom_line(colour = "#1380A1", size = 1) +
+  geom_hline(yintercept = 0, size = 1, colour="#333333") +
+  bbc_style() +
+  labs(title="Living longer",
+       subtitle = "Life expectancy in China 1952-2007")
+
+line
+```
+
+## multiple line chart
+
+```{r}
+#Prepare data
+multiple_line_df <- gapminder %>%
+  filter(country == "China" | country == "United States") 
+
+#Make plot
+multiple_line <- ggplot(multiple_line_df, aes(x = year, y = lifeExp, colour = country)) +
+  geom_line(size = 1) +
+  geom_hline(yintercept = 0, size = 1, colour="#333333") +
+  scale_colour_manual(values = c("#FAAB18", "#1380A1")) +
+  bbc_style() +
+  labs(title="Living longer",
+       subtitle = "Life expectancy in China and the US")
+
+multiple_line
+```
+
+## make a bar chart
+
+```{r}
+#Prepare data
+bar_df <- gapminder %>%
+  filter(year == 2007 & continent == "Africa") %>%
+  arrange(desc(lifeExp)) %>%
+  head(5)
+
+#Make plot
+bars <- ggplot(bar_df, aes(x = country, y = lifeExp)) +
+  geom_bar(stat="identity", 
+           position="identity", 
+           fill="#1380A1") +
+  geom_hline(yintercept = 0, size = 1, colour="#333333") +
+  bbc_style() +
+  labs(title="Reunion is highest",
+       subtitle = "Highest African life expectancy, 2007")
+
+bars
+```
+
+## stacked bar chart
+
+```{r}
+#prepare data
+stacked_df <- gapminder %>% 
+  filter(year == 2007) %>%
+  mutate(lifeExpGrouped = cut(lifeExp, 
+                    breaks = c(0, 50, 65, 80, 90),
+                    labels = c("Under 50", "50-65", "65-80", "80+"))) %>%
+  group_by(continent, lifeExpGrouped) %>%
+  summarise(continentPop = sum(as.numeric(pop)))
+
+#set order of stacks by changing factor levels
+stacked_df$lifeExpGrouped = factor(stacked_df$lifeExpGrouped, levels = rev(levels(stacked_df$lifeExpGrouped)))
+
+#create plot
+stacked_bars <- ggplot(data = stacked_df, 
+                       aes(x = continent,
+                           y = continentPop,
+                           fill = lifeExpGrouped)) +
+  geom_bar(stat = "identity", 
+           position = "fill") +
+  bbc_style() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_fill_viridis_d(direction = -1) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  labs(title = "How life expectancy varies",
+       subtitle = "% of population by life expectancy band, 2007") +
+  theme(legend.position = "top", 
+        legend.justification = "left") +
+  guides(fill = guide_legend(reverse = TRUE))
+
+stacked_bars
+```
+
+to change from proportions to values, change `position = "fill"` to `position = "dodge"` and set `fill` aeasthetically instead
+
+```{r}
+#Prepare data
+grouped_bar_df <- gapminder %>%
+  filter(year == 1967 | year == 2007) %>%
+  select(country, year, lifeExp) %>%
+  spread(year, lifeExp) %>%
+  mutate(gap = `2007` - `1967`) %>%
+  arrange(desc(gap)) %>%
+  head(5) %>%
+  gather(key = year, 
+         value = lifeExp,
+         -country,
+         -gap) 
+  
+#Make plot
+grouped_bars <- ggplot(grouped_bar_df, 
+                       aes(x = country, 
+                           y = lifeExp, 
+                           fill = as.factor(year))) +
+  geom_bar(stat="identity", position="dodge") +
+  geom_hline(yintercept = 0, size = 1, colour="#333333") +
+  bbc_style() +
+  scale_fill_manual(values = c("#1380A1", "#FAAB18")) +
+  labs(title="We're living longer",
+       subtitle = "Biggest life expectancy rise, 1967-2007")
+
+grouped_bars
+```
+
+## dumbbell chart
+
+```{r}
+library("ggalt")
+library("tidyr")
+
+#Prepare data
+dumbbell_df <- gapminder %>%
+  filter(year == 1967 | year == 2007) %>%
+  select(country, year, lifeExp) %>%
+  spread(year, lifeExp) %>%
+  mutate(gap = `2007` - `1967`) %>%
+  arrange(desc(gap)) %>%
+  head(10)
+
+#Make plot
+ggplot(dumbbell_df, aes(x = `1967`, xend = `2007`, y = reorder(country, gap), group = country)) + 
+  geom_dumbbell(colour = "#dddddd",
+                size = 3,
+                colour_x = "#FAAB18",
+                colour_xend = "#1380A1") +
+  bbc_style() + 
+  labs(title="We're living longer",
+       subtitle="Biggest life expectancy rise, 1967-2007")
+```
+
+## histogram
+
+```{r}
+hist_df <- gapminder %>%
+  filter(year == 2007)
+
+ggplot(hist_df, aes(lifeExp)) +
+  geom_histogram(binwidth = 5, colour = "white", fill = "#1380A1") +
+  geom_hline(yintercept = 0, size = 1, colour="#333333") +
+  bbc_style() +
+  scale_x_continuous(limits = c(35, 95),
+                     breaks = seq(40, 90, by = 10),
+                     labels = c("40", "50", "60", "70", "80", "90 years")) +
+  labs(title = "How life expectancy varies",
+       subtitle = "Distribution of life expectancy in 2007")
+```
+
+## changing the legend
+
+### remove legend
+
+```{r}
+multiple_line + guides(colour=FALSE)
+```
+
+remove all legends with:
+
+```{r}
+multiple_line + theme(legend.position = "none")
+```
+
+### change position
+
+```{r}
+multiple_line + theme(legend.position = "right")
+```
+
+use coordinates to be very specific
+
+```{r}
+ multiple_line + theme(legend.position = c(0.115,1.05),
+                      legend.direction = "horizontal") +  
+  labs(title="Living longer",
+       subtitle = "Life expectancy in China and the US\n")
+```
+
+syntax is \`margin(top, right, bottom, left)
+
+```{r}
+  + theme(legend.margin = margin(0, 0, 0, -200))
+```
+
+### remove legend title
+
+add after bbc_style()
+
+```{r}
++ theme(legend.title = element_blank())
+```
+
+### reverse the order of your legend
+
+```{r}
++ guides(fill = guide_legend(reverse = TRUE))
+```
+
+### rearrange layout of legend
+
+```{r}
++ guides(fill = guide_legend(nrow = 4, byrow = T))
+```
+
+### change appearance of legend symbols
+
+```{r}
++ guides(fill = guide_legend(override.aes = list(size = 4))))
+```
+
+### add space between legend labels
+
+```{r}
++ guides(fill = guide_legend(override.aes = list(size = 4))))
+```
+
+## changes to axes
+
+### flip coordinates of plot
+
+```{r}
+bars <- bars + coord_flip()
+bars
+```
+
+### add / remove gridlines
+
+```{r}
+bars <- bars + coord_flip() +
+  theme(panel.grid.major.x = element_line(color="#cbcbcb"), 
+        panel.grid.major.y=element_blank())
+bars
+```
+
+### change axis text manually
+
+```{r}
+bars <- bars + scale_y_continuous(limits=c(0,85),
+                   breaks = seq(0, 80, by = 20),
+                   labels = c("0","20", "40", "60", "80 years"))
+
+bars
+```
+
+### add thousand separators to axis labels
+
+base R
+
+```{r}
++ scale_y_continuous(labels = function(x) format(x, big.mark = ",",
+                                                 scientific = FALSE))
+```
+
+scales package
+
+```{r}
++ scale_y_continuous(labels = scales::comma)
+```
+
+### add percent symbol to axis labels
+
+```{r}
++ scale_y_continuous(labels = function(x) paste0(x, "%"))
+```
+
+### change plot limits
+
+```{r}
+bars + ylim(c(0,500))
+```
+
+### add axis titles
+
+```{r}
++ theme(axis.title = element_text(size = 18))
+```
+
+### modify axis titles
+
+```{r}
++ labs(x = "I'm an axis", 
+       y = "")
+```
+
+### add axis ticks
+
+```{r}
+multiple_line + theme(
+  axis.ticks.x = element_line(colour = "#333333"), 
+  axis.ticks.length =  unit(0.26, "cm"))
+
+```
+
+## Annotations
+
+### add an annotation
+
+```{r}
+multiple_line + geom_label(aes(x = 1980, y = 45, label = "I'm an annotation!"), 
+                           hjust = 0, 
+                           vjust = 0.5, 
+                           colour = "#555555", 
+                           fill = "white", 
+                           label.size = NA, 
+                           family="Helvetica", 
+                           size = 6)
+```
+
+add line breaks with `\n`
+
+```{r}
+multiple_line <- multiple_line + 
+  geom_label(aes(x = 1980, y = 45, label = "I'm quite a long\nannotation over\nthree rows"), 
+             hjust = 0, 
+             vjust = 0.5, 
+             lineheight = 0.8,
+             colour = "#555555", 
+             fill = "white", 
+             label.size = NA, 
+             family="Helvetica", 
+             size = 6) 
+multiple_line
+```
+
+direct labels
+
+```{r}
+multiple_line <- multiple_line + 
+  theme(legend.position = "none") + 
+  xlim(c(1950, 2011)) +
+  geom_label(aes(x = 2007, y = 79, label = "US"), 
+             hjust = 0, 
+             vjust = 0.5, 
+             colour = "#1380A1", 
+             fill = "white", 
+             label.size = NA, 
+             family="Helvetica", 
+             size = 6) +
+  geom_label(aes(x = 2007, y = 72, label = "China"), 
+             hjust = 0, 
+             vjust = 0.5, 
+             colour = "#FAAB18", 
+             fill = "white", 
+             label.size = NA, 
+             family="Helvetica", 
+             size = 6)
+multiple_line
+```
+
+### left- / right-align text
+
+`hjust` and `vjust` - value between 0 and 1
+
+### add labels based on data
+
+```{r}
+labelled.bars <- bars +
+  geom_label(aes(x = country, y = lifeExp, label = round(lifeExp, 0)),
+             hjust = 1, 
+             vjust = 0.5, 
+             colour = "white", 
+             fill = NA, 
+             label.size = NA, 
+             family="Helvetica", 
+             size = 6)
+
+labelled.bars
+```
+
+### add left-aligned labels to bar charts
+
+```{r}
+labelled.bars.v2 <- bars +
+  geom_label(aes(x = country, 
+                 y = 4, 
+                 label = round(lifeExp, 0)),
+             hjust = 0, 
+             vjust = 0.5, 
+             colour = "white", 
+             fill = NA, 
+             label.size = NA, 
+             family="Helvetica", 
+             size = 6)
+
+labelled.bars.v2
+```
+
+### add a line
+
+```{r}
+multiple_line + geom_segment(aes(x = 1979, y = 45, xend = 1965, yend = 43), 
+                             colour = "#555555", 
+                             size=0.5)
+```
+
+### add a curved line
+
+```{r}
+multiple_line + geom_curve(aes(x = 1979, y = 45, xend = 1965, yend = 43), 
+                           colour = "#555555", 
+                           curvature = -0.2,
+                           size=0.5)
+```
+
+### add an arrow
+
+```{r}
+multiple_line + geom_curve(aes(x = 1979, y = 45, xend = 1965, yend = 43), 
+                             colour = "#555555", 
+                             size=0.5, 
+                             curvature = -0.2,
+                             arrow = arrow(length = unit(0.03, "npc")))
+```
+
+### add a line across the whole plot
+
+```{r}
+multiple_line + geom_hline(yintercept = 10, size = 1, colour = "red", linetype = "dashed")
+```
+
+add vertical or horizontal baseline to charts
+
+```{r}
++ geom_hline(yintercept = 0, size = 1, colour = "#333333")
+```
+
+## Work with small multiples
+
+### facets
+
+```{r}
+#Prepare data
+facet <- gapminder %>%
+  filter(continent != "Americas") %>%
+  group_by(continent, year) %>%
+  summarise(pop = sum(as.numeric(pop)))
+
+#Make plot
+facet_plot <- ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  scale_fill_manual(values = c("#FAAB18", "#1380A1","#990000", "#588300")) + 
+  facet_wrap( ~ continent, ncol = 5) + 
+  scale_y_continuous(breaks = c(0, 2000000000, 4000000000),
+                     labels = c(0, "2bn", "4bn")) +
+  bbc_style() +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme(legend.position = "none",
+        axis.text.x = element_blank()) +
+  labs(title = "Asia's rapid growth",
+       subtitle = "Population growth by continent, 1952-2007")
+
+facet_plot
+```
+
+### Free scales
+
+```{r}
+#Make plot
+facet_plot_free <- ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free") + 
+  bbc_style() +
+  scale_fill_manual(values = c("#FAAB18", "#1380A1","#990000", "#588300")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "It's all relative",
+       subtitle = "Relative population growth by continent,1952-2007")
+facet_plot_free
+```
+
+## Something else entirely
+
+### increase decrease margins
+
+```{r}
+bars + theme(plot.subtitle=element_text(margin=margin(b=75)))
+```
+
+ugly!
+
+### exporting plot and x-axis margins
+
+Here is a guide that we work to when it comes to the margins and the height of your bar chart (with coord_flip applied to it):
+
+| size  | t   | b   |
+|-------|-----|-----|
+| 550px | 5   | 10  |
+| 650px | 7   | 10  |
+| 750px | 10  | 10  |
+| 850px | 14  | 10  |
+
+```{r}
+bar_chart_tall <- bars + theme(axis.text.x = element_text(margin=margin(t = 7, b = 10)))
+bar_chart_tall
+```
+### reorder bars by size
+
+```{r}
+bars <- ggplot(bar_df, aes(x = reorder(country, lifeExp), y = lifeExp)) +
+  geom_bar(stat="identity", position="identity", fill="#1380A1") +
+  geom_hline(yintercept = 0, size = 1, colour="#333333") +
+  bbc_style() +
+  coord_flip() +
+  labs(title="Reunion is highest",
+       subtitle = "Highest African life expectancy, 2007") +
+  theme(panel.grid.major.x = element_line(color="#cbcbcb"), 
+        panel.grid.major.y=element_blank())
+
+bars
+```
+
+### reorder bars manually
+
+```{r}
+dataset$column <- factor(dataset$column, levels = c("18-24","25-64","65+"))
+```
+
+### colour bars conditionally
+
+```{r}
+ggplot(bar_df, 
+       aes(x = reorder(country, lifeExp), y = lifeExp)) +
+  geom_bar(stat="identity", position="identity", fill=ifelse(bar_df$country == "Mauritius", "#1380A1", "#dddddd")) +
+  geom_hline(yintercept = 0, size = 1, colour="#333333") +
+  bbc_style() +
+  coord_flip() +
+  labs(title="Reunion is highest",
+       subtitle = "Highest African life expectancy, 2007") +
+  theme(panel.grid.major.x = element_line(color="#cbcbcb"), 
+        panel.grid.major.y=element_blank()) 
+```
+
