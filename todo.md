@@ -6,8 +6,8 @@
 
 - [x] update Rstudio
 - [x] troubleshoot knitr in VS code
-- [ ] transfer DC files (folder)
-- [ ] transfer powerbi files (folder)
+- [x] transfer DC files (folder)
+- [x] transfer powerbi files (folder)
 - [ ] basictemplate
 - [x] DSFS files - put into folder
 - [x] HOML files - put into folder
