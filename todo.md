@@ -2,6 +2,8 @@
 
 ## admin to do
 
+- [x] update Rstudio
+- [x] troubleshoot knitr in VS code
 
 
 ## things to finish

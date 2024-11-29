@@ -1,0 +1,152 @@
+---
+title: "Upgrading R and RStudio on a Windows Machine"
+author: "P Lovehagen"
+date: 2023-02-25
+date-modified: "`r format(Sys.time(), '%Y-%m-%d')`"
+tags: [R, process guide, upgrade]
+output:
+  quarto::html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    code:
+      wrap: true
+      eval: false
+    #css: "./ProcessStyle.css"
+---
+
+## 1. R Version
+
+Check current R version and latest available version.
+
+In RStudio / VS Code run:
+
+```{r}
+R.Version()$version.string
+```
+
+This will display the current version of R.
+
+To check the latest available version of R, go to CRAN website ([**https://cran.r-project.org/**](https://cran.r-project.org/)).
+
+## 2. RStudio Version
+
+Check current RStudio version and latest available version.
+
+In RStudio, go to menu bar and select "Help" \> "About RStudio" which will display the version of RStudio in use, e.g. :
+
+::: {#RStudio_version .special-block}
+RStudio 2022.12.0+353 "Elsbeth Geranium" Release (7d165dcfc1b6d300eb247738db2c7076234f6ef0, 2022-12-03) for Windows
+
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) RStudio/2022.12.0+353 Chrome/102.0.5005.167 Electron/19.1.3 Safari/537.36
+:::
+
+To check the latest version of RStudio, go to the RStudio website ([**https://www.rstudio.com/products/rstudio/download/#download**](https://www.rstudio.com/products/rstudio/download/#download)) and check the version number. Or go to "Help" \> "Check for Updates"
+
+## 3. Upgrading R {#sec-3.-upgrading-r}
+
+Steps to upgrade R:
+
+### Step 1: Download Latest Version of R
+
+Go to the CRAN website (https://cran.r-project.org/) and download the latest version of R compatible with your operating system.
+
+### Step 2: Install the New Version of R
+
+Run the installer and follow the instructions to install the new version of R. During the installation process, you should choose a different directory for the new installation to avoid overwriting any files or configurations from the previous installation.
+
+For example, to upgrade from `R-4.2.1` to `R-4.2.2` then the new default location may be `C:\Program Files\R\R-4.2.2`
+
+### Step 3: Point RStudio to the New Version of R
+
+After installing the new version of R, point RStudio to use the new version instead of the old one. To do this, open RStudio and go to the menu bar and select "Tools" \> "Global Options" \> "General". Under "R version", click on "Change" and browse to the new R installation directory. Select the R executable file (e.g., R.exe on Windows) and click "OK".
+
+Alternatively, you can set the path to the new version of R in the `.Renviron` file by adding the following line:
+
+```{r}
+R_HOME="C:/path/to/new/R"
+```
+
+Or updating the `R_HOME` environment variable in the system settings.  Depending on your machine, you may need to update user or system environment variables.
+
+* Search 'environment variables' in the Windows search bar OR
+  * Go to `Control Panel` \> `System and Security` \> `System` \> `Advanced system settings` \> `Environment Variables` OR
+  * Use command line `rundll32 sysdm.cpl,EditEnvironmentVariables`
+* Update the `R_HOME` variable to point to the new R installation directory.
+
+### Step 4: Migrate Libraries
+
+When upgrading to a new version of R, you don't necessarily need to migrate packages. New version of R will be able to access the packages installed bythe previous version of R. However, some packages may need to be reinstalled to work properly
+
+If migration is required, use `install.packages()` function with `lib.loc` argument to specify directory where packages are currently installed and the `repos` argument to specify the CRAN mirror to use.
+
+```{r}
+#To check path to the R installation directory
+.libPaths()
+
+#store locations
+old_lib_loc <- "C:/path/to/old/r/library"
+new_lib_loc <- "C:/path/to/new/r/library"
+
+# repo locations, e.g. :
+repos <- "https://cloud.r-project.org/"
+#"https://www.stats.bris.ac.uk/R/"
+
+installed_pkgs <- rownames(installed.packages(old_lib_loc))
+
+install.packages(installed_pkgs, lib = new_lib_loc, repos = repos)
+
+
+```
+
+Or use a package manager such as `packrat` or `renv`. These package managers for R help manage R package dependencies and ensure reproducibility across different environments.
+
+### Step 5: Remove Previous Version of R (Optional)
+
+After verifying that the new version of R is working properly with RStudio, you can remove the previous version of R from your system. To do this, go to `Add / Remove Programs`
+
+## 4. Upgrade RStudio
+
+Steps to upgrade RStudio
+
+### Step 1: Download Latest Version of RStudio
+
+Go to the RStudio website (https://www.rstudio.com/products/rstudio/download/#download) and download the latest version of RStudio compatible with your operating system.
+
+### Step 2: Install the New Version of RStudio
+
+Run the installer and follow the instructions to install the new version of RStudio. During the installation process, you should choose the same directory as your current RStudio installation to ensure that your R projects and settings are still accessible.
+
+### Step 3: Launch the New Version of RStudio
+
+After installing the new version of RStudio, you can launch it from your desktop or command line. Your R projects and settings
+
+## Using R in VS Code 
+
+This can vary depending on the setup and there are a few places to update.  For example, if environmental variables are updated but the `.vscode-R` folder is not updated, then it is not possible to generate docs with Quarto.
+
+Things to look out for: 
+
+* **settings.json**
+
+Use Command Palette to find `Preferences: Open Settings (JSON)` and check the path to R in the settings.json file.  For example:
+
+```json
+
+{
+  "r.rterm.windows": "C:\\Program Files\\R\\R-4.3.3\\bin\\R.exe",
+  "r.rpath.windows": "C:\\Program Files\\R\\R-4.3.3\\bin\\Rscript.exe",
+  "quarto.path": "C:\\Program Files\\R\\R-4.3.3\\bin\\Rscript.exe",
+}
+```
+
+* **Environment Variables** - as above
+
+* R Exensions - check settings
+
+* In OS, for example `C:\Users\zoona` - there may be a folder called `.vscode-R` which contains settings for the R extension in VS Code.  Check the settings in this folder:
+
+```json
+{"rpath":{"windows":"C:\\Program Files\\R\\R-4.3.3\bin","mac":"","linux":""},"debugger":{"commandLineArgs":[],"timeouts":{"startup":2000,"terminate":50,"prompt":0},"checkVersion":"recommended","trackTerminals":false},"rterm":{"windows":"C:\\Program Files\\R\\R-4.3.3\\bin\\R.exe","mac":"","linux":"","option":["--no-save","--no-restore"]},"libPaths":[],"useRenvLibPath":false,"lsp":{"enabled":true,"args":[],"promptToInstall":true,"debug":false,"diagnostics":true,"lang":"","use_stdio":false,"multiServer":true,"path":"C:\\Program Files\\R\\R-4.3.3\\bin\\R.exe"},"rmarkdown":{"codeLensCommands":["r.runCurrentChunk","r.runAboveChunks"],"enableCodeLens":true,"chunkBackgroundColor":"rgba(128, 128, 128, 0.1)","preview":{"autoRefresh":true,"zoom":1},"knit":{"useBackgroundProcess":true,"focusOutputChannel":true,"openOutputFile":false,"command":"rmarkdown::render","defaults":{"knitWorkingDirectory":"document directory"}}},"helpPanel":{"enableSyntaxHighlighting":true,"cacheIndexFiles":"None","previewLocalPackages":["."],"rpath":"","enableHoverLinks":true,"clickCodeExamples":{"Click":"Copy","Ctrl+Click":"Run","Shift+Click":"Ignore"}},"source":{"encoding":"UTF-8","echo":false,"focus":"editor"},"alwaysUseActiveTerminal":false,"bracketedPaste":false,"removeLeadingComments":false,"sessionWatcher":true,"session":{"useWebServer":false,"watchGlobalEnvironment":true,"objectLengthLimit":2000,"objectTimeout":50,"levelOfObjectDetail":"Minimal","emulateRStudioAPI":true,"data":{"rowLimit":0,"pageSize":500},"viewers":{"viewColumn":{"plot":"Two","browser":"Active","viewer":"Two","pageViewer":"Active","view":"Two","helpPanel":"Two"}}},"rtermSendDelay":8,"workspaceViewer":{"showObjectSize":false,"removeHiddenItems":false,"clearPrompt":true},"liveShare":{"timeout":10000,"defaults":{"commandForward":false,"shareWorkspace":true,"shareBrowser":false}},"plot":{"devArgs":{"width":800,"height":1200},"useHttpgd":false,"defaults":{"colorTheme":"original","plotPreviewLayout":"multirow","fullWindowMode":false},"timing":{"resizeInterval":100,"refreshInterval":10},"customStyleOverwrites":""}}
+```
+
