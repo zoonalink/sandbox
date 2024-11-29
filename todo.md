@@ -11,7 +11,7 @@
 - [ ] basictemplate
 - [x] DSFS files - put into folder
 - [x] HOML files - put into folder
-- [ ] MLM files - put into folder
+- [x] MLM files - put into folder
 - [ ] py files
 - [ ] R quarto files
 - [ ] Ruby files
@@ -22,7 +22,8 @@
 - [ ] netflix project
 - [ ] data science from scratch - joel grus
 - [ ] hands on machine learning - aurelien geron
-- [ ] 
+- [ ] MLM projects
+- [ ] MS ML projects
 
 ## future ideas to explore
 
