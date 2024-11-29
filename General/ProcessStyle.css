@@ -1,0 +1,61 @@
+/* Set default font and font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+}
+
+/* Add a gray border around all images */
+img {
+  border: 1px solid #ccc;
+}
+
+/* Style all code blocks */
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12pt;
+}
+
+/* Style all headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+/* Set the background color of the table header row */
+table thead tr {
+  background-color: #f5f5f5;
+}
+
+/* Style table cells */
+table td, table th {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Add some padding to the body */
+body {
+  padding: 20px;
+}
+/* Style the div element */
+div.special-block {
+  background-color: #f00000;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
