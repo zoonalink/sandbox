@@ -1,0 +1,313 @@
+RASP Year,Subregion,Count
+10/11,Caribbean,35
+10/11,Central Africa,20
+10/11,Central America,2
+10/11,Central Asia,3
+10/11,East Africa,77
+10/11,East Asia,158
+10/11,Eastern Africa,1
+10/11,Eastern Europe,308
+10/11,Middle East,103
+10/11,North Africa,34
+10/11,North America,57
+10/11,Northern Europe,90
+10/11,Oceania,22
+10/11,South America,20
+10/11,South Asia,311
+10/11,Southeast Asia,342
+10/11,Southern Africa,96
+10/11,Southern Europe,215
+10/11,West Africa,172
+10/11,Western Europe,432
+11/12,Caribbean,40
+11/12,Caucasus,1
+11/12,Central Africa,16
+11/12,Central America,2
+11/12,Central Asia,6
+11/12,East Africa,97
+11/12,East Asia,237
+11/12,Eastern Africa,1
+11/12,Eastern Europe,327
+11/12,Middle East,110
+11/12,North Africa,27
+11/12,North America,61
+11/12,Northern Europe,77
+11/12,Oceania,14
+11/12,South America,18
+11/12,South Asia,258
+11/12,Southeast Asia,496
+11/12,Southern Africa,103
+11/12,Southern Europe,197
+11/12,West Africa,219
+11/12,Western Europe,402
+12/13,Caribbean,36
+12/13,Caucasus,2
+12/13,Central Africa,12
+12/13,Central Asia,6
+12/13,East Africa,104
+12/13,East Asia,349
+12/13,Eastern Africa,2
+12/13,Eastern Europe,346
+12/13,Middle East,124
+12/13,North Africa,18
+12/13,North America,64
+12/13,Northern Europe,72
+12/13,Oceania,20
+12/13,South America,17
+12/13,South Asia,226
+12/13,Southeast Asia,680
+12/13,Southern Africa,85
+12/13,Southern Europe,224
+12/13,West Africa,233
+12/13,Western Europe,407
+13/14,Caribbean,31
+13/14,Caucasus,2
+13/14,Central Africa,18
+13/14,Central Asia,4
+13/14,East Africa,115
+13/14,East Asia,378
+13/14,Eastern Europe,349
+13/14,Middle East,112
+13/14,North Africa,29
+13/14,North America,67
+13/14,Northern Europe,63
+13/14,Oceania,19
+13/14,South America,25
+13/14,South Asia,232
+13/14,Southeast Asia,978
+13/14,Southern Africa,85
+13/14,Southern Europe,253
+13/14,West Africa,262
+13/14,Western Europe,410
+14/15,Caribbean,31
+14/15,Caucasus,3
+14/15,Central Africa,19
+14/15,Central America,1
+14/15,Central Asia,6
+14/15,East Africa,133
+14/15,East Asia,438
+14/15,Eastern Africa,2
+14/15,Eastern Europe,398
+14/15,Middle East,146
+14/15,North Africa,46
+14/15,North America,59
+14/15,Northern Europe,62
+14/15,Oceania,20
+14/15,South America,25
+14/15,South Asia,223
+14/15,Southeast Asia,1069
+14/15,Southern Africa,83
+14/15,Southern Europe,278
+14/15,West Africa,293
+14/15,Western Europe,400
+15/16,Caribbean,39
+15/16,Caucasus,3
+15/16,Central Africa,25
+15/16,Central America,4
+15/16,Central Asia,8
+15/16,East Africa,125
+15/16,East Asia,422
+15/16,Eastern Africa,2
+15/16,Eastern Europe,450
+15/16,Middle East,170
+15/16,North Africa,67
+15/16,North America,62
+15/16,Northern Europe,75
+15/16,Oceania,19
+15/16,South America,25
+15/16,South Asia,267
+15/16,Southeast Asia,1046
+15/16,Southern Africa,88
+15/16,Southern Europe,319
+15/16,West Africa,273
+15/16,Western Europe,417
+16/17,Antarctica,2
+16/17,Caribbean,44
+16/17,Caucasus,5
+16/17,Central Africa,25
+16/17,Central America,5
+16/17,Central Asia,7
+16/17,East Africa,141
+16/17,East Asia,379
+16/17,Eastern Africa,2
+16/17,Eastern Europe,537
+16/17,Middle East,189
+16/17,North Africa,96
+16/17,North America,85
+16/17,Northern Europe,104
+16/17,Oceania,18
+16/17,South America,30
+16/17,South Asia,287
+16/17,Southeast Asia,1018
+16/17,Southern Africa,95
+16/17,Southern Europe,378
+16/17,West Africa,261
+16/17,Western Europe,452
+17/18,Antarctica,2
+17/18,Caribbean,49
+17/18,Caucasus,1
+17/18,Central Africa,26
+17/18,Central America,5
+17/18,Central Asia,10
+17/18,East Africa,137
+17/18,East Asia,485
+17/18,Eastern Africa,3
+17/18,Eastern Europe,650
+17/18,Middle East,204
+17/18,North Africa,121
+17/18,North America,84
+17/18,Northern Europe,112
+17/18,Oceania,16
+17/18,South America,29
+17/18,South Asia,296
+17/18,Southeast Asia,971
+17/18,Southern Africa,92
+17/18,Southern Europe,418
+17/18,West Africa,210
+17/18,Western Europe,457
+18/19,Caribbean,54
+18/19,Caucasus,1
+18/19,Central Africa,22
+18/19,Central America,2
+18/19,Central Asia,11
+18/19,East Africa,133
+18/19,East Asia,373
+18/19,Eastern Africa,3
+18/19,Eastern Europe,749
+18/19,Middle East,243
+18/19,North Africa,127
+18/19,North America,86
+18/19,Northern Europe,109
+18/19,Oceania,17
+18/19,South America,40
+18/19,South Asia,332
+18/19,Southeast Asia,958
+18/19,Southern Africa,92
+18/19,Southern Europe,476
+18/19,West Africa,226
+18/19,Western Europe,455
+19/20,Antarctica,1
+19/20,Caribbean,64
+19/20,Caucasus,3
+19/20,Central Africa,18
+19/20,Central Asia,13
+19/20,East Africa,167
+19/20,East Asia,620
+19/20,Eastern Africa,1
+19/20,Eastern Europe,794
+19/20,Middle East,314
+19/20,North Africa,116
+19/20,North America,111
+19/20,Northern Europe,115
+19/20,Oceania,20
+19/20,South America,52
+19/20,South Asia,417
+19/20,Southeast Asia,981
+19/20,Southern Africa,110
+19/20,Southern Europe,530
+19/20,West Africa,296
+19/20,Western Europe,495
+20/21,Antarctica,1
+20/21,Caribbean,61
+20/21,Caucasus,3
+20/21,Central Africa,22
+20/21,Central America,1
+20/21,Central Asia,9
+20/21,East Africa,190
+20/21,East Asia,684
+20/21,Eastern Africa,1
+20/21,Eastern Europe,836
+20/21,Middle East,421
+20/21,North Africa,158
+20/21,North America,127
+20/21,Northern Europe,109
+20/21,Oceania,20
+20/21,South America,54
+20/21,South Asia,948
+20/21,Southeast Asia,722
+20/21,Southern Africa,129
+20/21,Southern Europe,561
+20/21,West Africa,489
+20/21,Western Europe,469
+21/22,Caribbean,60
+21/22,Caucasus,2
+21/22,Central Africa,37
+21/22,Central America,4
+21/22,Central Asia,7
+21/22,East Africa,176
+21/22,East Asia,729
+21/22,Eastern Africa,3
+21/22,Eastern Europe,706
+21/22,Middle East,454
+21/22,North Africa,172
+21/22,North America,138
+21/22,Northern Europe,94
+21/22,Oceania,14
+21/22,South America,52
+21/22,South Asia,1634
+21/22,Southeast Asia,646
+21/22,Southern Africa,108
+21/22,Southern Europe,534
+21/22,West Africa,1044
+21/22,Western Europe,476
+22/23,Caribbean,44
+22/23,Caucasus,4
+22/23,Central Africa,30
+22/23,Central America,5
+22/23,Central Asia,9
+22/23,East Africa,162
+22/23,East Asia,765
+22/23,Eastern Africa,3
+22/23,Eastern Europe,505
+22/23,Middle East,426
+22/23,North Africa,187
+22/23,North America,114
+22/23,Northern Europe,63
+22/23,Oceania,14
+22/23,South America,46
+22/23,South Asia,1852
+22/23,Southeast Asia,794
+22/23,Southern Africa,76
+22/23,Southern Europe,415
+22/23,West Africa,1393
+22/23,Western Europe,351
+23/24,Caribbean,30
+23/24,Caucasus,1
+23/24,Central Africa,20
+23/24,Central America,3
+23/24,Central Asia,7
+23/24,East Africa,118
+23/24,East Asia,514
+23/24,Eastern Africa,3
+23/24,Eastern Europe,257
+23/24,Middle East,328
+23/24,North Africa,128
+23/24,North America,81
+23/24,Northern Europe,26
+23/24,Oceania,11
+23/24,South America,32
+23/24,South Asia,1413
+23/24,Southeast Asia,668
+23/24,Southern Africa,45
+23/24,Southern Europe,238
+23/24,West Africa,934
+23/24,Western Europe,219
+24/25,Caribbean,3
+24/25,Central Africa,5
+24/25,Central Asia,2
+24/25,East Africa,19
+24/25,East Asia,36
+24/25,Eastern Africa,2
+24/25,Eastern Europe,27
+24/25,Middle East,84
+24/25,North Africa,24
+24/25,North America,17
+24/25,Northern Europe,5
+24/25,Oceania,3
+24/25,South America,3
+24/25,South Asia,418
+24/25,Southeast Asia,115
+24/25,Southern Africa,4
+24/25,Southern Europe,25
+24/25,West Africa,245
+24/25,Western Europe,19

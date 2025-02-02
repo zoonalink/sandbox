@@ -1,0 +1,2066 @@
+RASP Year,Region,Subregion,Nationality,Count
+10/11,Africa,Central Africa,ANGOLA,6
+10/11,Africa,Central Africa,CAMEROON,11
+10/11,Africa,Central Africa,CHAD,1
+10/11,Africa,Central Africa,CONGO,1
+10/11,Africa,Central Africa,EQUATORIAL GUINEA,1
+10/11,Africa,East Africa,BURUNDI,1
+10/11,Africa,East Africa,ERITREA,1
+10/11,Africa,East Africa,KENYA,12
+10/11,Africa,East Africa,MALAWI,4
+10/11,Africa,East Africa,MAURITIUS,19
+10/11,Africa,East Africa,SOMALIA,19
+10/11,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",3
+10/11,Africa,East Africa,UGANDA,7
+10/11,Africa,East Africa,ZAMBIA,11
+10/11,Africa,Eastern Africa,SEYCHELLES,1
+10/11,Africa,North Africa,ALGERIA,3
+10/11,Africa,North Africa,EGYPT,9
+10/11,Africa,North Africa,LIBYA,10
+10/11,Africa,North Africa,MOROCCO,1
+10/11,Africa,North Africa,SUDAN,3
+10/11,Africa,North Africa,TUNISIA,8
+10/11,Africa,Southern Africa,BOTSWANA,2
+10/11,Africa,Southern Africa,NAMIBIA,1
+10/11,Africa,Southern Africa,SOUTH AFRICA,25
+10/11,Africa,Southern Africa,ZIMBABWE,68
+10/11,Africa,West Africa,BENIN,1
+10/11,Africa,West Africa,COTE D'IVOIRE,1
+10/11,Africa,West Africa,"GAMBIA, THE",6
+10/11,Africa,West Africa,GHANA,25
+10/11,Africa,West Africa,LIBERIA,1
+10/11,Africa,West Africa,NIGERIA,134
+10/11,Africa,West Africa,SIERRA LEONE,4
+10/11,Asia,Central Asia,KAZAKHSTAN,1
+10/11,Asia,Central Asia,MONGOLIA,1
+10/11,Asia,Central Asia,UZBEKISTAN,1
+10/11,Asia,East Asia,CHINA,135
+10/11,Asia,East Asia,HONG KONG,7
+10/11,Asia,East Asia,JAPAN,6
+10/11,Asia,East Asia,KOREA (SOUTH),5
+10/11,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",5
+10/11,Asia,Middle East,BAHRAIN,2
+10/11,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",20
+10/11,Asia,Middle East,IRAQ,1
+10/11,Asia,Middle East,JORDAN,36
+10/11,Asia,Middle East,KUWAIT,5
+10/11,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,1
+10/11,Asia,Middle East,OMAN,4
+10/11,Asia,Middle East,SAUDI ARABIA,19
+10/11,Asia,Middle East,SYRIA,3
+10/11,Asia,Middle East,TURKEY,11
+10/11,Asia,Middle East,YEMEN,1
+10/11,Asia,South Asia,AFGHANISTAN,1
+10/11,Asia,South Asia,BANGLADESH,32
+10/11,Asia,South Asia,INDIA,180
+10/11,Asia,South Asia,MALDIVES,2
+10/11,Asia,South Asia,NEPAL,14
+10/11,Asia,South Asia,PAKISTAN,74
+10/11,Asia,South Asia,SRI LANKA,8
+10/11,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),1
+10/11,Asia,Southeast Asia,BURMA/MYANMAR,2
+10/11,Asia,Southeast Asia,INDONESIA,2
+10/11,Asia,Southeast Asia,LAOS,1
+10/11,Asia,Southeast Asia,MALAYSIA,216
+10/11,Asia,Southeast Asia,PHILIPPINES,9
+10/11,Asia,Southeast Asia,SINGAPORE,13
+10/11,Asia,Southeast Asia,THAILAND,15
+10/11,Asia,Southeast Asia,VIETNAM,83
+10/11,Europe,Eastern Europe,BELARUS,3
+10/11,Europe,Eastern Europe,BOSNIA & HERZEGOVINA,2
+10/11,Europe,Eastern Europe,BULGARIA,17
+10/11,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),27
+10/11,Europe,Eastern Europe,CYPRUS EU,49
+10/11,Europe,Eastern Europe,CZECH REPUBLIC,14
+10/11,Europe,Eastern Europe,HUNGARY,14
+10/11,Europe,Eastern Europe,LATVIA,12
+10/11,Europe,Eastern Europe,LITHUANIA,25
+10/11,Europe,Eastern Europe,"MOLDOVA [MOLDOVA, REPUBLIC OF]",2
+10/11,Europe,Eastern Europe,POLAND,96
+10/11,Europe,Eastern Europe,ROMANIA,15
+10/11,Europe,Eastern Europe,SLOVAKIA,16
+10/11,Europe,Eastern Europe,UKRAINE,1
+10/11,Europe,Northern Europe,DENMARK,12
+10/11,Europe,Northern Europe,ESTONIA,2
+10/11,Europe,Northern Europe,FINLAND,18
+10/11,Europe,Northern Europe,ICELAND,1
+10/11,Europe,Northern Europe,ISLE OF MAN,1
+10/11,Europe,Northern Europe,NORWAY,25
+10/11,Europe,Northern Europe,SWEDEN,31
+10/11,Europe,Southern Europe,ALBANIA,2
+10/11,Europe,Southern Europe,GIBRALTAR,5
+10/11,Europe,Southern Europe,GREECE,42
+10/11,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",51
+10/11,Europe,Southern Europe,MALTA,9
+10/11,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,37
+10/11,Europe,Southern Europe,SLOVENIA,2
+10/11,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,67
+10/11,Europe,Western Europe,AUSTRIA,10
+10/11,Europe,Western Europe,BELGIUM,7
+10/11,Europe,Western Europe,ENGLAND,6
+10/11,Europe,Western Europe,FRANCE {INCLUDES CORSICA},87
+10/11,Europe,Western Europe,GERMANY,131
+10/11,Europe,Western Europe,IRELAND,116
+10/11,Europe,Western Europe,JERSEY,5
+10/11,Europe,Western Europe,LIECHTENSTEIN,1
+10/11,Europe,Western Europe,LUXEMBOURG,2
+10/11,Europe,Western Europe,NETHERLANDS,60
+10/11,Europe,Western Europe,SWITZERLAND,7
+10/11,Europe/Asia,Eastern Europe,RUSSIA,15
+10/11,North America,Caribbean,BAHAMAS,1
+10/11,North America,Caribbean,BARBADOS,3
+10/11,North America,Caribbean,BERMUDA,6
+10/11,North America,Caribbean,BRITISH VIRGIN ISLANDS,1
+10/11,North America,Caribbean,CAYMAN ISLANDS,1
+10/11,North America,Caribbean,CUBA,1
+10/11,North America,Caribbean,JAMAICA,8
+10/11,North America,Caribbean,ST LUCIA,4
+10/11,North America,Caribbean,ST VINCENT AND THE GRENADINES,5
+10/11,North America,Caribbean,TRINIDAD AND TOBAGO,5
+10/11,North America,Central America,BELIZE,2
+10/11,North America,North America,CANADA,21
+10/11,North America,North America,MEXICO,4
+10/11,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,32
+10/11,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,10
+10/11,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,12
+10/11,South America,South America,BRAZIL,12
+10/11,South America,South America,CHILE,1
+10/11,South America,South America,FALKLAND ISLANDS [FALKLAND ISLANDS (MALVINAS)],1
+10/11,South America,South America,GUYANA,2
+10/11,South America,South America,PERU,1
+10/11,South America,South America,VENEZUELA,3
+11/12,Africa,Central Africa,ANGOLA,3
+11/12,Africa,Central Africa,CAMEROON,10
+11/12,Africa,Central Africa,CONGO,1
+11/12,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},2
+11/12,Africa,East Africa,BURUNDI,2
+11/12,Africa,East Africa,ERITREA,3
+11/12,Africa,East Africa,ETHIOPIA,1
+11/12,Africa,East Africa,KENYA,14
+11/12,Africa,East Africa,MALAWI,7
+11/12,Africa,East Africa,MAURITIUS,25
+11/12,Africa,East Africa,RWANDA,2
+11/12,Africa,East Africa,SOMALIA,14
+11/12,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",4
+11/12,Africa,East Africa,UGANDA,11
+11/12,Africa,East Africa,ZAMBIA,14
+11/12,Africa,Eastern Africa,SEYCHELLES,1
+11/12,Africa,North Africa,ALGERIA,2
+11/12,Africa,North Africa,EGYPT,7
+11/12,Africa,North Africa,LIBYA,7
+11/12,Africa,North Africa,MOROCCO,1
+11/12,Africa,North Africa,SUDAN,2
+11/12,Africa,North Africa,TUNISIA,8
+11/12,Africa,Southern Africa,BOTSWANA,2
+11/12,Africa,Southern Africa,ESWATINI,1
+11/12,Africa,Southern Africa,SOUTH AFRICA,21
+11/12,Africa,Southern Africa,ZIMBABWE,79
+11/12,Africa,West Africa,COTE D'IVOIRE,1
+11/12,Africa,West Africa,"GAMBIA, THE",7
+11/12,Africa,West Africa,GHANA,35
+11/12,Africa,West Africa,LIBERIA,1
+11/12,Africa,West Africa,NIGERIA,169
+11/12,Africa,West Africa,SIERRA LEONE,6
+11/12,Asia,Caucasus,GEORGIA,1
+11/12,Asia,Central Asia,KAZAKHSTAN,5
+11/12,Asia,Central Asia,MONGOLIA,1
+11/12,Asia,East Asia,CHINA,201
+11/12,Asia,East Asia,HONG KONG,9
+11/12,Asia,East Asia,JAPAN,8
+11/12,Asia,East Asia,KOREA (SOUTH),7
+11/12,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",12
+11/12,Asia,Middle East,BAHRAIN,2
+11/12,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",20
+11/12,Asia,Middle East,IRAQ,2
+11/12,Asia,Middle East,JORDAN,32
+11/12,Asia,Middle East,KUWAIT,7
+11/12,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,1
+11/12,Asia,Middle East,OMAN,3
+11/12,Asia,Middle East,SAUDI ARABIA,32
+11/12,Asia,Middle East,SYRIA,3
+11/12,Asia,Middle East,TURKEY,7
+11/12,Asia,Middle East,YEMEN,1
+11/12,Asia,South Asia,AFGHANISTAN,3
+11/12,Asia,South Asia,BANGLADESH,29
+11/12,Asia,South Asia,INDIA,121
+11/12,Asia,South Asia,MALDIVES,6
+11/12,Asia,South Asia,NEPAL,17
+11/12,Asia,South Asia,PAKISTAN,76
+11/12,Asia,South Asia,SRI LANKA,6
+11/12,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),2
+11/12,Asia,Southeast Asia,BURMA/MYANMAR,3
+11/12,Asia,Southeast Asia,INDONESIA,6
+11/12,Asia,Southeast Asia,MALAYSIA,337
+11/12,Asia,Southeast Asia,PHILIPPINES,17
+11/12,Asia,Southeast Asia,SINGAPORE,9
+11/12,Asia,Southeast Asia,THAILAND,28
+11/12,Asia,Southeast Asia,VIETNAM,94
+11/12,Europe,Eastern Europe,BELARUS,3
+11/12,Europe,Eastern Europe,BOSNIA & HERZEGOVINA,2
+11/12,Europe,Eastern Europe,BULGARIA,24
+11/12,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),9
+11/12,Europe,Eastern Europe,CYPRUS EU,65
+11/12,Europe,Eastern Europe,CYPRUS Non EU,1
+11/12,Europe,Eastern Europe,CZECH REPUBLIC,12
+11/12,Europe,Eastern Europe,HUNGARY,20
+11/12,Europe,Eastern Europe,LATVIA,19
+11/12,Europe,Eastern Europe,LITHUANIA,36
+11/12,Europe,Eastern Europe,"MOLDOVA [MOLDOVA, REPUBLIC OF]",2
+11/12,Europe,Eastern Europe,POLAND,89
+11/12,Europe,Eastern Europe,ROMANIA,16
+11/12,Europe,Eastern Europe,SLOVAKIA,13
+11/12,Europe,Eastern Europe,UKRAINE,5
+11/12,Europe,Northern Europe,DENMARK,14
+11/12,Europe,Northern Europe,ESTONIA,2
+11/12,Europe,Northern Europe,FINLAND,13
+11/12,Europe,Northern Europe,ICELAND,1
+11/12,Europe,Northern Europe,ISLE OF MAN,2
+11/12,Europe,Northern Europe,NORWAY,18
+11/12,Europe,Northern Europe,SWEDEN,27
+11/12,Europe,Southern Europe,ALBANIA,1
+11/12,Europe,Southern Europe,GIBRALTAR,5
+11/12,Europe,Southern Europe,GREECE,38
+11/12,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",47
+11/12,Europe,Southern Europe,MALTA,8
+11/12,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,37
+11/12,Europe,Southern Europe,SLOVENIA,2
+11/12,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,59
+11/12,Europe,Western Europe,AUSTRIA,8
+11/12,Europe,Western Europe,BELGIUM,4
+11/12,Europe,Western Europe,ENGLAND,5
+11/12,Europe,Western Europe,FRANCE {INCLUDES CORSICA},72
+11/12,Europe,Western Europe,GERMANY,118
+11/12,Europe,Western Europe,IRELAND,122
+11/12,Europe,Western Europe,JERSEY,6
+11/12,Europe,Western Europe,LUXEMBOURG,2
+11/12,Europe,Western Europe,NETHERLANDS,56
+11/12,Europe,Western Europe,SWITZERLAND,9
+11/12,Europe/Asia,Eastern Europe,RUSSIA,11
+11/12,North America,Caribbean,BAHAMAS,4
+11/12,North America,Caribbean,BARBADOS,4
+11/12,North America,Caribbean,BERMUDA,7
+11/12,North America,Caribbean,BRITISH VIRGIN ISLANDS,1
+11/12,North America,Caribbean,CAYMAN ISLANDS,3
+11/12,North America,Caribbean,DOMINICA,1
+11/12,North America,Caribbean,JAMAICA,7
+11/12,North America,Caribbean,ST KITTS NEVIS,1
+11/12,North America,Caribbean,ST LUCIA,2
+11/12,North America,Caribbean,ST VINCENT AND THE GRENADINES,5
+11/12,North America,Caribbean,TRINIDAD AND TOBAGO,5
+11/12,North America,Central America,BELIZE,2
+11/12,North America,North America,CANADA,25
+11/12,North America,North America,MEXICO,4
+11/12,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,32
+11/12,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,6
+11/12,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,8
+11/12,South America,South America,BRAZIL,12
+11/12,South America,South America,ECUADOR,1
+11/12,South America,South America,FALKLAND ISLANDS [FALKLAND ISLANDS (MALVINAS)],1
+11/12,South America,South America,GUYANA,2
+11/12,South America,South America,VENEZUELA,2
+12/13,Africa,Central Africa,ANGOLA,2
+12/13,Africa,Central Africa,CAMEROON,8
+12/13,Africa,Central Africa,CONGO,1
+12/13,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},1
+12/13,Africa,East Africa,BURUNDI,1
+12/13,Africa,East Africa,ERITREA,3
+12/13,Africa,East Africa,ETHIOPIA,1
+12/13,Africa,East Africa,KENYA,15
+12/13,Africa,East Africa,MALAWI,9
+12/13,Africa,East Africa,MAURITIUS,21
+12/13,Africa,East Africa,RWANDA,3
+12/13,Africa,East Africa,SOMALIA,17
+12/13,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",4
+12/13,Africa,East Africa,UGANDA,15
+12/13,Africa,East Africa,ZAMBIA,15
+12/13,Africa,Eastern Africa,SEYCHELLES,2
+12/13,Africa,North Africa,ALGERIA,2
+12/13,Africa,North Africa,EGYPT,4
+12/13,Africa,North Africa,LIBYA,5
+12/13,Africa,North Africa,MOROCCO,1
+12/13,Africa,North Africa,SUDAN,1
+12/13,Africa,North Africa,TUNISIA,5
+12/13,Africa,Southern Africa,BOTSWANA,1
+12/13,Africa,Southern Africa,ESWATINI,1
+12/13,Africa,Southern Africa,SOUTH AFRICA,17
+12/13,Africa,Southern Africa,ZIMBABWE,66
+12/13,Africa,West Africa,COTE D'IVOIRE,1
+12/13,Africa,West Africa,"GAMBIA, THE",7
+12/13,Africa,West Africa,GHANA,33
+12/13,Africa,West Africa,MALI,1
+12/13,Africa,West Africa,MAURITANIA,1
+12/13,Africa,West Africa,NIGERIA,185
+12/13,Africa,West Africa,SIERRA LEONE,5
+12/13,Asia,Caucasus,ARMENIA,1
+12/13,Asia,Caucasus,GEORGIA,1
+12/13,Asia,Central Asia,KAZAKHSTAN,4
+12/13,Asia,Central Asia,MONGOLIA,1
+12/13,Asia,Central Asia,UZBEKISTAN,1
+12/13,Asia,East Asia,CHINA,290
+12/13,Asia,East Asia,HONG KONG,28
+12/13,Asia,East Asia,JAPAN,8
+12/13,Asia,East Asia,KOREA (SOUTH),10
+12/13,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",13
+12/13,Asia,Middle East,BAHRAIN,2
+12/13,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",21
+12/13,Asia,Middle East,IRAQ,2
+12/13,Asia,Middle East,JORDAN,27
+12/13,Asia,Middle East,KUWAIT,11
+12/13,Asia,Middle East,LEBANON,1
+12/13,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,3
+12/13,Asia,Middle East,OMAN,4
+12/13,Asia,Middle East,SAUDI ARABIA,36
+12/13,Asia,Middle East,SYRIA,2
+12/13,Asia,Middle East,TURKEY,13
+12/13,Asia,Middle East,YEMEN,2
+12/13,Asia,South Asia,AFGHANISTAN,4
+12/13,Asia,South Asia,BANGLADESH,38
+12/13,Asia,South Asia,INDIA,86
+12/13,Asia,South Asia,MALDIVES,6
+12/13,Asia,South Asia,NEPAL,19
+12/13,Asia,South Asia,PAKISTAN,66
+12/13,Asia,South Asia,SRI LANKA,7
+12/13,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),3
+12/13,Asia,Southeast Asia,BURMA/MYANMAR,8
+12/13,Asia,Southeast Asia,INDONESIA,10
+12/13,Asia,Southeast Asia,MALAYSIA,453
+12/13,Asia,Southeast Asia,PHILIPPINES,22
+12/13,Asia,Southeast Asia,SINGAPORE,8
+12/13,Asia,Southeast Asia,THAILAND,34
+12/13,Asia,Southeast Asia,VIETNAM,142
+12/13,Europe,Eastern Europe,BELARUS,3
+12/13,Europe,Eastern Europe,BOSNIA & HERZEGOVINA,2
+12/13,Europe,Eastern Europe,BULGARIA,20
+12/13,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),7
+12/13,Europe,Eastern Europe,CYPRUS EU,76
+12/13,Europe,Eastern Europe,CYPRUS Non EU,1
+12/13,Europe,Eastern Europe,CZECH REPUBLIC,12
+12/13,Europe,Eastern Europe,HUNGARY,19
+12/13,Europe,Eastern Europe,LATVIA,24
+12/13,Europe,Eastern Europe,LITHUANIA,43
+12/13,Europe,Eastern Europe,POLAND,88
+12/13,Europe,Eastern Europe,ROMANIA,23
+12/13,Europe,Eastern Europe,SLOVAKIA,13
+12/13,Europe,Eastern Europe,UKRAINE,6
+12/13,Europe,Northern Europe,DENMARK,14
+12/13,Europe,Northern Europe,ESTONIA,2
+12/13,Europe,Northern Europe,FINLAND,18
+12/13,Europe,Northern Europe,ISLE OF MAN,3
+12/13,Europe,Northern Europe,NORWAY,12
+12/13,Europe,Northern Europe,SWEDEN,23
+12/13,Europe,Southern Europe,ALBANIA,3
+12/13,Europe,Southern Europe,GIBRALTAR,8
+12/13,Europe,Southern Europe,GREECE,41
+12/13,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",47
+12/13,Europe,Southern Europe,MALTA,7
+12/13,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,48
+12/13,Europe,Southern Europe,SLOVENIA,2
+12/13,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,68
+12/13,Europe,Western Europe,AUSTRIA,6
+12/13,Europe,Western Europe,BELGIUM,12
+12/13,Europe,Western Europe,FRANCE {INCLUDES CORSICA},69
+12/13,Europe,Western Europe,GERMANY,114
+12/13,Europe,Western Europe,IRELAND,128
+12/13,Europe,Western Europe,JERSEY,8
+12/13,Europe,Western Europe,LUXEMBOURG,2
+12/13,Europe,Western Europe,NETHERLANDS,55
+12/13,Europe,Western Europe,SWITZERLAND,13
+12/13,Europe/Asia,Eastern Europe,RUSSIA,9
+12/13,North America,Caribbean,BAHAMAS,6
+12/13,North America,Caribbean,BARBADOS,3
+12/13,North America,Caribbean,BERMUDA,8
+12/13,North America,Caribbean,CAYMAN ISLANDS,2
+12/13,North America,Caribbean,JAMAICA,6
+12/13,North America,Caribbean,ST KITTS NEVIS,1
+12/13,North America,Caribbean,ST LUCIA,2
+12/13,North America,Caribbean,ST VINCENT AND THE GRENADINES,3
+12/13,North America,Caribbean,TRINIDAD AND TOBAGO,5
+12/13,North America,North America,CANADA,19
+12/13,North America,North America,MEXICO,2
+12/13,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,43
+12/13,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,10
+12/13,Oceania,Oceania,FIJI,1
+12/13,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,9
+12/13,South America,South America,BRAZIL,10
+12/13,South America,South America,CHILE,1
+12/13,South America,South America,COLOMBIA,1
+12/13,South America,South America,ECUADOR,1
+12/13,South America,South America,FALKLAND ISLANDS [FALKLAND ISLANDS (MALVINAS)],1
+12/13,South America,South America,GUYANA,2
+12/13,South America,South America,VENEZUELA,1
+13/14,Africa,Central Africa,ANGOLA,2
+13/14,Africa,Central Africa,CAMEROON,10
+13/14,Africa,Central Africa,CENTRAL AFRICAN REPUBLIC,1
+13/14,Africa,Central Africa,CONGO,2
+13/14,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},2
+13/14,Africa,Central Africa,GABON,1
+13/14,Africa,East Africa,DJIBOUTI,1
+13/14,Africa,East Africa,ERITREA,4
+13/14,Africa,East Africa,ETHIOPIA,1
+13/14,Africa,East Africa,KENYA,17
+13/14,Africa,East Africa,MALAWI,11
+13/14,Africa,East Africa,MAURITIUS,26
+13/14,Africa,East Africa,MOZAMBIQUE,1
+13/14,Africa,East Africa,RWANDA,2
+13/14,Africa,East Africa,SOMALIA,23
+13/14,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",2
+13/14,Africa,East Africa,UGANDA,13
+13/14,Africa,East Africa,ZAMBIA,14
+13/14,Africa,North Africa,ALGERIA,3
+13/14,Africa,North Africa,EGYPT,12
+13/14,Africa,North Africa,LIBYA,4
+13/14,Africa,North Africa,MOROCCO,2
+13/14,Africa,North Africa,SUDAN,5
+13/14,Africa,North Africa,TUNISIA,3
+13/14,Africa,Southern Africa,BOTSWANA,1
+13/14,Africa,Southern Africa,ESWATINI,1
+13/14,Africa,Southern Africa,SOUTH AFRICA,17
+13/14,Africa,Southern Africa,ZIMBABWE,66
+13/14,Africa,West Africa,COTE D'IVOIRE,1
+13/14,Africa,West Africa,"GAMBIA, THE",9
+13/14,Africa,West Africa,GHANA,37
+13/14,Africa,West Africa,MALI,1
+13/14,Africa,West Africa,NIGERIA,208
+13/14,Africa,West Africa,SIERRA LEONE,6
+13/14,Asia,Caucasus,ARMENIA,1
+13/14,Asia,Caucasus,AZERBAIJAN,1
+13/14,Asia,Central Asia,KAZAKHSTAN,3
+13/14,Asia,Central Asia,UZBEKISTAN,1
+13/14,Asia,East Asia,CHINA,319
+13/14,Asia,East Asia,HONG KONG,26
+13/14,Asia,East Asia,JAPAN,10
+13/14,Asia,East Asia,KOREA (SOUTH),5
+13/14,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",18
+13/14,Asia,Middle East,BAHRAIN,1
+13/14,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",13
+13/14,Asia,Middle East,IRAQ,2
+13/14,Asia,Middle East,JORDAN,15
+13/14,Asia,Middle East,KUWAIT,25
+13/14,Asia,Middle East,LEBANON,1
+13/14,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,5
+13/14,Asia,Middle East,OMAN,8
+13/14,Asia,Middle East,SAUDI ARABIA,34
+13/14,Asia,Middle East,TURKEY,7
+13/14,Asia,Middle East,UNITED ARAB EMIRATES,1
+13/14,Asia,South Asia,AFGHANISTAN,5
+13/14,Asia,South Asia,BANGLADESH,50
+13/14,Asia,South Asia,INDIA,89
+13/14,Asia,South Asia,MALDIVES,6
+13/14,Asia,South Asia,NEPAL,16
+13/14,Asia,South Asia,PAKISTAN,59
+13/14,Asia,South Asia,SRI LANKA,7
+13/14,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),2
+13/14,Asia,Southeast Asia,BURMA/MYANMAR,10
+13/14,Asia,Southeast Asia,CAMBODIA,6
+13/14,Asia,Southeast Asia,INDONESIA,13
+13/14,Asia,Southeast Asia,MALAYSIA,653
+13/14,Asia,Southeast Asia,PHILIPPINES,23
+13/14,Asia,Southeast Asia,SINGAPORE,7
+13/14,Asia,Southeast Asia,THAILAND,51
+13/14,Asia,Southeast Asia,VIETNAM,213
+13/14,Europe,Eastern Europe,BELARUS,1
+13/14,Europe,Eastern Europe,BOSNIA & HERZEGOVINA,2
+13/14,Europe,Eastern Europe,BULGARIA,29
+13/14,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),4
+13/14,Europe,Eastern Europe,CYPRUS EU,76
+13/14,Europe,Eastern Europe,CZECH REPUBLIC,13
+13/14,Europe,Eastern Europe,HUNGARY,16
+13/14,Europe,Eastern Europe,LATVIA,21
+13/14,Europe,Eastern Europe,LITHUANIA,45
+13/14,Europe,Eastern Europe,POLAND,90
+13/14,Europe,Eastern Europe,ROMANIA,21
+13/14,Europe,Eastern Europe,SERBIA,2
+13/14,Europe,Eastern Europe,SLOVAKIA,11
+13/14,Europe,Eastern Europe,UKRAINE,7
+13/14,Europe,Northern Europe,DENMARK,16
+13/14,Europe,Northern Europe,ESTONIA,1
+13/14,Europe,Northern Europe,FINLAND,11
+13/14,Europe,Northern Europe,ICELAND,1
+13/14,Europe,Northern Europe,ISLE OF MAN,3
+13/14,Europe,Northern Europe,NORWAY,10
+13/14,Europe,Northern Europe,SWEDEN,21
+13/14,Europe,Southern Europe,ALBANIA,4
+13/14,Europe,Southern Europe,GIBRALTAR,8
+13/14,Europe,Southern Europe,GREECE,39
+13/14,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",60
+13/14,Europe,Southern Europe,MALTA,9
+13/14,Europe,Southern Europe,MONTENEGRO,1
+13/14,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,56
+13/14,Europe,Southern Europe,SLOVENIA,2
+13/14,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,74
+13/14,Europe,Western Europe,AUSTRIA,8
+13/14,Europe,Western Europe,BELGIUM,8
+13/14,Europe,Western Europe,ENGLAND,1
+13/14,Europe,Western Europe,FRANCE {INCLUDES CORSICA},62
+13/14,Europe,Western Europe,GERMANY,114
+13/14,Europe,Western Europe,GUERNSEY,2
+13/14,Europe,Western Europe,IRELAND,134
+13/14,Europe,Western Europe,JERSEY,5
+13/14,Europe,Western Europe,LUXEMBOURG,2
+13/14,Europe,Western Europe,NETHERLANDS,63
+13/14,Europe,Western Europe,SWITZERLAND,11
+13/14,Europe/Asia,Eastern Europe,RUSSIA,11
+13/14,North America,Caribbean,BAHAMAS,5
+13/14,North America,Caribbean,BERMUDA,6
+13/14,North America,Caribbean,BRITISH VIRGIN ISLANDS,1
+13/14,North America,Caribbean,CAYMAN ISLANDS,2
+13/14,North America,Caribbean,JAMAICA,8
+13/14,North America,Caribbean,ST KITTS NEVIS,1
+13/14,North America,Caribbean,ST LUCIA,2
+13/14,North America,Caribbean,ST VINCENT AND THE GRENADINES,3
+13/14,North America,Caribbean,TRINIDAD AND TOBAGO,3
+13/14,North America,North America,CANADA,19
+13/14,North America,North America,MEXICO,4
+13/14,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,44
+13/14,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,7
+13/14,Oceania,Oceania,FIJI,2
+13/14,Oceania,Oceania,FRENCH TERRITORIAL COLLECTIVITY,1
+13/14,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,9
+13/14,South America,South America,BRAZIL,19
+13/14,South America,South America,COLOMBIA,2
+13/14,South America,South America,ECUADOR,1
+13/14,South America,South America,VENEZUELA,3
+14/15,Africa,Central Africa,ANGOLA,7
+14/15,Africa,Central Africa,CAMEROON,8
+14/15,Africa,Central Africa,CONGO,1
+14/15,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},1
+14/15,Africa,Central Africa,GABON,2
+14/15,Africa,East Africa,DJIBOUTI,1
+14/15,Africa,East Africa,ERITREA,5
+14/15,Africa,East Africa,ETHIOPIA,1
+14/15,Africa,East Africa,KENYA,22
+14/15,Africa,East Africa,MADAGASCAR,1
+14/15,Africa,East Africa,MALAWI,9
+14/15,Africa,East Africa,MAURITIUS,43
+14/15,Africa,East Africa,MOZAMBIQUE,1
+14/15,Africa,East Africa,RWANDA,1
+14/15,Africa,East Africa,SOMALIA,22
+14/15,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",5
+14/15,Africa,East Africa,UGANDA,13
+14/15,Africa,East Africa,ZAMBIA,9
+14/15,Africa,Eastern Africa,BRITISH INDIAN OCEAN TERRITORY,1
+14/15,Africa,Eastern Africa,SEYCHELLES,1
+14/15,Africa,North Africa,ALGERIA,4
+14/15,Africa,North Africa,EGYPT,19
+14/15,Africa,North Africa,LIBYA,7
+14/15,Africa,North Africa,MOROCCO,4
+14/15,Africa,North Africa,SUDAN,7
+14/15,Africa,North Africa,TUNISIA,5
+14/15,Africa,Southern Africa,BOTSWANA,4
+14/15,Africa,Southern Africa,ESWATINI,1
+14/15,Africa,Southern Africa,LESOTHO,1
+14/15,Africa,Southern Africa,NAMIBIA,1
+14/15,Africa,Southern Africa,SOUTH AFRICA,17
+14/15,Africa,Southern Africa,ZIMBABWE,59
+14/15,Africa,West Africa,CAPE VERDE ISLANDS,1
+14/15,Africa,West Africa,COTE D'IVOIRE,1
+14/15,Africa,West Africa,"GAMBIA, THE",9
+14/15,Africa,West Africa,GHANA,39
+14/15,Africa,West Africa,IVORY COAST {COTE D IVOIRE},1
+14/15,Africa,West Africa,LIBERIA,2
+14/15,Africa,West Africa,MAURITANIA,1
+14/15,Africa,West Africa,NIGERIA,235
+14/15,Africa,West Africa,SENEGAL,1
+14/15,Africa,West Africa,SIERRA LEONE,3
+14/15,Asia,Caucasus,AZERBAIJAN,2
+14/15,Asia,Caucasus,GEORGIA,1
+14/15,Asia,Central Asia,KAZAKHSTAN,5
+14/15,Asia,Central Asia,UZBEKISTAN,1
+14/15,Asia,East Asia,CHINA,357
+14/15,Asia,East Asia,HONG KONG,51
+14/15,Asia,East Asia,JAPAN,7
+14/15,Asia,East Asia,KOREA (SOUTH),7
+14/15,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",16
+14/15,Asia,Middle East,BAHRAIN,2
+14/15,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",14
+14/15,Asia,Middle East,IRAQ,3
+14/15,Asia,Middle East,JORDAN,29
+14/15,Asia,Middle East,KUWAIT,24
+14/15,Asia,Middle East,LEBANON,1
+14/15,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,5
+14/15,Asia,Middle East,OMAN,6
+14/15,Asia,Middle East,QATAR,1
+14/15,Asia,Middle East,SAUDI ARABIA,47
+14/15,Asia,Middle East,SYRIA,2
+14/15,Asia,Middle East,TURKEY,9
+14/15,Asia,Middle East,UNITED ARAB EMIRATES,1
+14/15,Asia,Middle East,YEMEN,1
+14/15,Asia,Middle East,YEMEN SOUTH/ADEN/SOCOTRA,1
+14/15,Asia,South Asia,AFGHANISTAN,5
+14/15,Asia,South Asia,BANGLADESH,45
+14/15,Asia,South Asia,INDIA,91
+14/15,Asia,South Asia,MALDIVES,2
+14/15,Asia,South Asia,NEPAL,20
+14/15,Asia,South Asia,PAKISTAN,50
+14/15,Asia,South Asia,SRI LANKA,10
+14/15,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),2
+14/15,Asia,Southeast Asia,BURMA/MYANMAR,14
+14/15,Asia,Southeast Asia,CAMBODIA,8
+14/15,Asia,Southeast Asia,INDONESIA,21
+14/15,Asia,Southeast Asia,MALAYSIA,676
+14/15,Asia,Southeast Asia,PHILIPPINES,23
+14/15,Asia,Southeast Asia,SINGAPORE,9
+14/15,Asia,Southeast Asia,THAILAND,74
+14/15,Asia,Southeast Asia,VIETNAM,242
+14/15,Europe,Eastern Europe,BELARUS,1
+14/15,Europe,Eastern Europe,BULGARIA,31
+14/15,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),4
+14/15,Europe,Eastern Europe,CYPRUS EU,84
+14/15,Europe,Eastern Europe,CZECH REPUBLIC,8
+14/15,Europe,Eastern Europe,HUNGARY,25
+14/15,Europe,Eastern Europe,LATVIA,22
+14/15,Europe,Eastern Europe,LITHUANIA,43
+14/15,Europe,Eastern Europe,POLAND,126
+14/15,Europe,Eastern Europe,ROMANIA,24
+14/15,Europe,Eastern Europe,SERBIA,2
+14/15,Europe,Eastern Europe,SLOVAKIA,9
+14/15,Europe,Eastern Europe,UKRAINE,6
+14/15,Europe,Northern Europe,DENMARK,16
+14/15,Europe,Northern Europe,ESTONIA,2
+14/15,Europe,Northern Europe,FINLAND,13
+14/15,Europe,Northern Europe,ICELAND,2
+14/15,Europe,Northern Europe,ISLE OF MAN,1
+14/15,Europe,Northern Europe,NORWAY,8
+14/15,Europe,Northern Europe,SWEDEN,20
+14/15,Europe,Southern Europe,ALBANIA,4
+14/15,Europe,Southern Europe,CROATIA,2
+14/15,Europe,Southern Europe,GIBRALTAR,7
+14/15,Europe,Southern Europe,GREECE,43
+14/15,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",65
+14/15,Europe,Southern Europe,MALTA,8
+14/15,Europe,Southern Europe,MONTENEGRO,1
+14/15,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,58
+14/15,Europe,Southern Europe,SLOVENIA,1
+14/15,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,89
+14/15,Europe,Western Europe,AUSTRIA,8
+14/15,Europe,Western Europe,BELGIUM,9
+14/15,Europe,Western Europe,ENGLAND,8
+14/15,Europe,Western Europe,FRANCE {INCLUDES CORSICA},59
+14/15,Europe,Western Europe,GERMANY,93
+14/15,Europe,Western Europe,GUERNSEY,3
+14/15,Europe,Western Europe,IRELAND,126
+14/15,Europe,Western Europe,JERSEY,4
+14/15,Europe,Western Europe,LUXEMBOURG,2
+14/15,Europe,Western Europe,NETHERLANDS,79
+14/15,Europe,Western Europe,SWITZERLAND,9
+14/15,Europe/Asia,Eastern Europe,RUSSIA,13
+14/15,North America,Caribbean,BAHAMAS,4
+14/15,North America,Caribbean,BERMUDA,9
+14/15,North America,Caribbean,BRITISH VIRGIN ISLANDS,1
+14/15,North America,Caribbean,CAYMAN ISLANDS,1
+14/15,North America,Caribbean,DOMINICA,1
+14/15,North America,Caribbean,JAMAICA,7
+14/15,North America,Caribbean,ST LUCIA,1
+14/15,North America,Caribbean,ST VINCENT AND THE GRENADINES,3
+14/15,North America,Caribbean,TRINIDAD AND TOBAGO,3
+14/15,North America,Caribbean,TURKS AND CAICOS ISLANDS,1
+14/15,North America,Central America,GUATEMALA,1
+14/15,North America,North America,CANADA,17
+14/15,North America,North America,MEXICO,7
+14/15,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,35
+14/15,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,9
+14/15,Oceania,Oceania,FIJI,2
+14/15,Oceania,Oceania,FRENCH TERRITORIAL COLLECTIVITY,1
+14/15,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,8
+14/15,South America,South America,BRAZIL,11
+14/15,South America,South America,COLOMBIA,6
+14/15,South America,South America,ECUADOR,1
+14/15,South America,South America,GUYANA,2
+14/15,South America,South America,VENEZUELA,5
+15/16,Africa,Central Africa,ANGOLA,10
+15/16,Africa,Central Africa,CAMEROON,8
+15/16,Africa,Central Africa,CONGO,2
+15/16,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},2
+15/16,Africa,Central Africa,EQUATORIAL GUINEA,1
+15/16,Africa,Central Africa,GABON,2
+15/16,Africa,East Africa,ERITREA,5
+15/16,Africa,East Africa,ETHIOPIA,1
+15/16,Africa,East Africa,KENYA,23
+15/16,Africa,East Africa,MALAWI,9
+15/16,Africa,East Africa,MAURITIUS,39
+15/16,Africa,East Africa,SOMALIA,21
+15/16,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",6
+15/16,Africa,East Africa,UGANDA,16
+15/16,Africa,East Africa,ZAMBIA,5
+15/16,Africa,Eastern Africa,BRITISH INDIAN OCEAN TERRITORY,1
+15/16,Africa,Eastern Africa,SEYCHELLES,1
+15/16,Africa,North Africa,ALGERIA,6
+15/16,Africa,North Africa,EGYPT,32
+15/16,Africa,North Africa,LIBYA,8
+15/16,Africa,North Africa,MOROCCO,5
+15/16,Africa,North Africa,SUDAN,11
+15/16,Africa,North Africa,TUNISIA,5
+15/16,Africa,Southern Africa,BOTSWANA,4
+15/16,Africa,Southern Africa,NAMIBIA,1
+15/16,Africa,Southern Africa,SOUTH AFRICA,21
+15/16,Africa,Southern Africa,ZIMBABWE,62
+15/16,Africa,West Africa,"GAMBIA, THE",6
+15/16,Africa,West Africa,GHANA,33
+15/16,Africa,West Africa,IVORY COAST {COTE D IVOIRE},1
+15/16,Africa,West Africa,LIBERIA,2
+15/16,Africa,West Africa,MAURITANIA,1
+15/16,Africa,West Africa,NIGERIA,227
+15/16,Africa,West Africa,SENEGAL,1
+15/16,Africa,West Africa,SIERRA LEONE,2
+15/16,Asia,Caucasus,AZERBAIJAN,1
+15/16,Asia,Caucasus,GEORGIA,2
+15/16,Asia,Central Asia,KAZAKHSTAN,7
+15/16,Asia,Central Asia,UZBEKISTAN,1
+15/16,Asia,East Asia,CHINA,322
+15/16,Asia,East Asia,HONG KONG,69
+15/16,Asia,East Asia,JAPAN,6
+15/16,Asia,East Asia,KOREA (SOUTH),7
+15/16,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",18
+15/16,Asia,Middle East,BAHRAIN,4
+15/16,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",11
+15/16,Asia,Middle East,IRAQ,7
+15/16,Asia,Middle East,JORDAN,35
+15/16,Asia,Middle East,KUWAIT,17
+15/16,Asia,Middle East,LEBANON,4
+15/16,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,5
+15/16,Asia,Middle East,OMAN,7
+15/16,Asia,Middle East,QATAR,6
+15/16,Asia,Middle East,SAUDI ARABIA,57
+15/16,Asia,Middle East,SYRIA,3
+15/16,Asia,Middle East,TURKEY,10
+15/16,Asia,Middle East,UNITED ARAB EMIRATES,1
+15/16,Asia,Middle East,YEMEN,1
+15/16,Asia,Middle East,YEMEN SOUTH/ADEN/SOCOTRA,2
+15/16,Asia,South Asia,AFGHANISTAN,4
+15/16,Asia,South Asia,BANGLADESH,81
+15/16,Asia,South Asia,INDIA,86
+15/16,Asia,South Asia,MALDIVES,1
+15/16,Asia,South Asia,NEPAL,21
+15/16,Asia,South Asia,PAKISTAN,58
+15/16,Asia,South Asia,SRI LANKA,16
+15/16,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),5
+15/16,Asia,Southeast Asia,BURMA/MYANMAR,14
+15/16,Asia,Southeast Asia,CAMBODIA,3
+15/16,Asia,Southeast Asia,INDONESIA,20
+15/16,Asia,Southeast Asia,MALAYSIA,571
+15/16,Asia,Southeast Asia,PHILIPPINES,28
+15/16,Asia,Southeast Asia,SINGAPORE,12
+15/16,Asia,Southeast Asia,THAILAND,118
+15/16,Asia,Southeast Asia,VIETNAM,275
+15/16,Europe,Eastern Europe,BULGARIA,39
+15/16,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),4
+15/16,Europe,Eastern Europe,CYPRUS EU,90
+15/16,Europe,Eastern Europe,CZECH REPUBLIC,11
+15/16,Europe,Eastern Europe,HUNGARY,26
+15/16,Europe,Eastern Europe,LATVIA,24
+15/16,Europe,Eastern Europe,LITHUANIA,45
+15/16,Europe,Eastern Europe,"MOLDOVA [MOLDOVA, REPUBLIC OF]",1
+15/16,Europe,Eastern Europe,POLAND,135
+15/16,Europe,Eastern Europe,ROMANIA,44
+15/16,Europe,Eastern Europe,SERBIA,1
+15/16,Europe,Eastern Europe,SLOVAKIA,13
+15/16,Europe,Eastern Europe,UKRAINE,2
+15/16,Europe,Northern Europe,DENMARK,14
+15/16,Europe,Northern Europe,ESTONIA,4
+15/16,Europe,Northern Europe,FINLAND,16
+15/16,Europe,Northern Europe,ICELAND,2
+15/16,Europe,Northern Europe,NORWAY,14
+15/16,Europe,Northern Europe,SWEDEN,25
+15/16,Europe,Southern Europe,ALBANIA,2
+15/16,Europe,Southern Europe,CROATIA,2
+15/16,Europe,Southern Europe,GIBRALTAR,4
+15/16,Europe,Southern Europe,GREECE,51
+15/16,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",84
+15/16,Europe,Southern Europe,MALTA,4
+15/16,Europe,Southern Europe,MONTENEGRO,1
+15/16,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,56
+15/16,Europe,Southern Europe,SLOVENIA,1
+15/16,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,114
+15/16,Europe,Western Europe,AUSTRIA,8
+15/16,Europe,Western Europe,BELGIUM,10
+15/16,Europe,Western Europe,ENGLAND,9
+15/16,Europe,Western Europe,FRANCE {INCLUDES CORSICA},65
+15/16,Europe,Western Europe,GERMANY,84
+15/16,Europe,Western Europe,GUERNSEY,4
+15/16,Europe,Western Europe,IRELAND,128
+15/16,Europe,Western Europe,JERSEY,6
+15/16,Europe,Western Europe,LUXEMBOURG,1
+15/16,Europe,Western Europe,NETHERLANDS,93
+15/16,Europe,Western Europe,SCOTLAND,1
+15/16,Europe,Western Europe,SWITZERLAND,8
+15/16,Europe/Asia,Eastern Europe,RUSSIA,15
+15/16,North America,Caribbean,ANGUILLA,1
+15/16,North America,Caribbean,BAHAMAS,4
+15/16,North America,Caribbean,BARBADOS,2
+15/16,North America,Caribbean,BERMUDA,7
+15/16,North America,Caribbean,BRITISH VIRGIN ISLANDS,3
+15/16,North America,Caribbean,CAYMAN ISLANDS,2
+15/16,North America,Caribbean,DOMINICA,1
+15/16,North America,Caribbean,JAMAICA,12
+15/16,North America,Caribbean,ST KITTS NEVIS,1
+15/16,North America,Caribbean,ST VINCENT AND THE GRENADINES,2
+15/16,North America,Caribbean,TRINIDAD AND TOBAGO,3
+15/16,North America,Caribbean,TURKS AND CAICOS ISLANDS,1
+15/16,North America,Central America,BELIZE,1
+15/16,North America,Central America,EL SALVADOR,1
+15/16,North America,Central America,GUATEMALA,1
+15/16,North America,Central America,HONDURAS,1
+15/16,North America,North America,CANADA,10
+15/16,North America,North America,MEXICO,9
+15/16,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,43
+15/16,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,11
+15/16,Oceania,Oceania,FIJI,1
+15/16,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,7
+15/16,South America,South America,BOLIVIA,1
+15/16,South America,South America,BRAZIL,10
+15/16,South America,South America,COLOMBIA,8
+15/16,South America,South America,ECUADOR,2
+15/16,South America,South America,GUYANA,2
+15/16,South America,South America,VENEZUELA,2
+16/17,Africa,Central Africa,ANGOLA,15
+16/17,Africa,Central Africa,CAMEROON,6
+16/17,Africa,Central Africa,CONGO,2
+16/17,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},2
+16/17,Africa,East Africa,ERITREA,3
+16/17,Africa,East Africa,ETHIOPIA,2
+16/17,Africa,East Africa,KENYA,36
+16/17,Africa,East Africa,MALAWI,6
+16/17,Africa,East Africa,MAURITIUS,38
+16/17,Africa,East Africa,SOMALIA,19
+16/17,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",9
+16/17,Africa,East Africa,UGANDA,18
+16/17,Africa,East Africa,ZAMBIA,10
+16/17,Africa,Eastern Africa,SEYCHELLES,2
+16/17,Africa,North Africa,ALGERIA,7
+16/17,Africa,North Africa,EGYPT,58
+16/17,Africa,North Africa,LIBYA,9
+16/17,Africa,North Africa,MOROCCO,7
+16/17,Africa,North Africa,SUDAN,10
+16/17,Africa,North Africa,TUNISIA,5
+16/17,Africa,Southern Africa,BOTSWANA,3
+16/17,Africa,Southern Africa,LESOTHO,1
+16/17,Africa,Southern Africa,NAMIBIA,2
+16/17,Africa,Southern Africa,SOUTH AFRICA,26
+16/17,Africa,Southern Africa,ZIMBABWE,63
+16/17,Africa,West Africa,CAPE VERDE ISLANDS,1
+16/17,Africa,West Africa,"GAMBIA, THE",6
+16/17,Africa,West Africa,GHANA,37
+16/17,Africa,West Africa,GUINEA,1
+16/17,Africa,West Africa,IVORY COAST {COTE D IVOIRE},1
+16/17,Africa,West Africa,LIBERIA,2
+16/17,Africa,West Africa,NIGERIA,210
+16/17,Africa,West Africa,SIERRA LEONE,3
+16/17,Antarctica,Antarctica,BRITISH ANTARCTICA,2
+16/17,Asia,Caucasus,ARMENIA,1
+16/17,Asia,Caucasus,AZERBAIJAN,2
+16/17,Asia,Caucasus,GEORGIA,2
+16/17,Asia,Central Asia,KAZAKHSTAN,6
+16/17,Asia,Central Asia,TURKMENISTAN,1
+16/17,Asia,East Asia,CHINA,284
+16/17,Asia,East Asia,HONG KONG,64
+16/17,Asia,East Asia,JAPAN,8
+16/17,Asia,East Asia,KOREA (SOUTH),7
+16/17,Asia,East Asia,MACAO,1
+16/17,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",15
+16/17,Asia,Middle East,BAHRAIN,4
+16/17,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",11
+16/17,Asia,Middle East,IRAQ,9
+16/17,Asia,Middle East,ISRAEL,2
+16/17,Asia,Middle East,JORDAN,55
+16/17,Asia,Middle East,KUWAIT,6
+16/17,Asia,Middle East,LEBANON,6
+16/17,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,3
+16/17,Asia,Middle East,OMAN,13
+16/17,Asia,Middle East,QATAR,10
+16/17,Asia,Middle East,SAUDI ARABIA,54
+16/17,Asia,Middle East,SYRIA,2
+16/17,Asia,Middle East,TURKEY,11
+16/17,Asia,Middle East,UNITED ARAB EMIRATES,1
+16/17,Asia,Middle East,YEMEN SOUTH/ADEN/SOCOTRA,2
+16/17,Asia,South Asia,AFGHANISTAN,4
+16/17,Asia,South Asia,BANGLADESH,105
+16/17,Asia,South Asia,INDIA,90
+16/17,Asia,South Asia,MALDIVES,6
+16/17,Asia,South Asia,NEPAL,19
+16/17,Asia,South Asia,PAKISTAN,47
+16/17,Asia,South Asia,SRI LANKA,16
+16/17,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),8
+16/17,Asia,Southeast Asia,BURMA/MYANMAR,15
+16/17,Asia,Southeast Asia,CAMBODIA,2
+16/17,Asia,Southeast Asia,INDONESIA,22
+16/17,Asia,Southeast Asia,LAOS,1
+16/17,Asia,Southeast Asia,MALAYSIA,494
+16/17,Asia,Southeast Asia,PHILIPPINES,34
+16/17,Asia,Southeast Asia,SINGAPORE,10
+16/17,Asia,Southeast Asia,THAILAND,163
+16/17,Asia,Southeast Asia,VIETNAM,269
+16/17,Europe,Eastern Europe,BULGARIA,43
+16/17,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),1
+16/17,Europe,Eastern Europe,CYPRUS EU,101
+16/17,Europe,Eastern Europe,CZECH REPUBLIC,31
+16/17,Europe,Eastern Europe,HUNGARY,35
+16/17,Europe,Eastern Europe,LATVIA,25
+16/17,Europe,Eastern Europe,LITHUANIA,45
+16/17,Europe,Eastern Europe,MACEDONIA [THE FORMER YUGOSLAV REPUBLIC OF],1
+16/17,Europe,Eastern Europe,POLAND,157
+16/17,Europe,Eastern Europe,ROMANIA,62
+16/17,Europe,Eastern Europe,SERBIA,1
+16/17,Europe,Eastern Europe,SLOVAKIA,19
+16/17,Europe,Eastern Europe,UKRAINE,1
+16/17,Europe,Northern Europe,DENMARK,19
+16/17,Europe,Northern Europe,ESTONIA,5
+16/17,Europe,Northern Europe,FINLAND,22
+16/17,Europe,Northern Europe,ICELAND,1
+16/17,Europe,Northern Europe,ISLE OF MAN,2
+16/17,Europe,Northern Europe,NORWAY,17
+16/17,Europe,Northern Europe,SWEDEN,38
+16/17,Europe,Southern Europe,ALBANIA,1
+16/17,Europe,Southern Europe,CROATIA,2
+16/17,Europe,Southern Europe,GIBRALTAR,3
+16/17,Europe,Southern Europe,GREECE,61
+16/17,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",120
+16/17,Europe,Southern Europe,MALTA,6
+16/17,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,66
+16/17,Europe,Southern Europe,SLOVENIA,1
+16/17,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,118
+16/17,Europe,Western Europe,AUSTRIA,14
+16/17,Europe,Western Europe,BELGIUM,9
+16/17,Europe,Western Europe,ENGLAND,9
+16/17,Europe,Western Europe,FRANCE {INCLUDES CORSICA},82
+16/17,Europe,Western Europe,GERMANY,103
+16/17,Europe,Western Europe,GUERNSEY,3
+16/17,Europe,Western Europe,IRELAND,122
+16/17,Europe,Western Europe,JERSEY,5
+16/17,Europe,Western Europe,NETHERLANDS,94
+16/17,Europe,Western Europe,SWITZERLAND,11
+16/17,Europe/Asia,Eastern Europe,RUSSIA,15
+16/17,North America,Caribbean,ANGUILLA,2
+16/17,North America,Caribbean,BAHAMAS,1
+16/17,North America,Caribbean,BARBADOS,3
+16/17,North America,Caribbean,BERMUDA,12
+16/17,North America,Caribbean,BRITISH VIRGIN ISLANDS,3
+16/17,North America,Caribbean,CAYMAN ISLANDS,1
+16/17,North America,Caribbean,DOMINICA,1
+16/17,North America,Caribbean,JAMAICA,12
+16/17,North America,Caribbean,ST KITTS NEVIS,2
+16/17,North America,Caribbean,ST LUCIA,2
+16/17,North America,Caribbean,TRINIDAD AND TOBAGO,4
+16/17,North America,Caribbean,TURKS AND CAICOS ISLANDS,1
+16/17,North America,Central America,BELIZE,1
+16/17,North America,Central America,EL SALVADOR,2
+16/17,North America,Central America,HONDURAS,1
+16/17,North America,Central America,NICARAGUA,1
+16/17,North America,North America,CANADA,13
+16/17,North America,North America,MEXICO,16
+16/17,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,56
+16/17,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,11
+16/17,Oceania,Oceania,FIJI,1
+16/17,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,6
+16/17,South America,South America,BOLIVIA,1
+16/17,South America,South America,BRAZIL,15
+16/17,South America,South America,COLOMBIA,9
+16/17,South America,South America,ECUADOR,2
+16/17,South America,South America,FALKLAND ISLANDS [FALKLAND ISLANDS (MALVINAS)],1
+16/17,South America,South America,GUYANA,2
+17/18,Africa,Central Africa,ANGOLA,16
+17/18,Africa,Central Africa,CAMEROON,6
+17/18,Africa,Central Africa,CONGO,2
+17/18,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},2
+17/18,Africa,East Africa,BURUNDI,1
+17/18,Africa,East Africa,DJIBOUTI,1
+17/18,Africa,East Africa,ERITREA,3
+17/18,Africa,East Africa,ETHIOPIA,2
+17/18,Africa,East Africa,KENYA,34
+17/18,Africa,East Africa,MALAWI,6
+17/18,Africa,East Africa,MAURITIUS,41
+17/18,Africa,East Africa,SOMALIA,16
+17/18,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",7
+17/18,Africa,East Africa,UGANDA,17
+17/18,Africa,East Africa,ZAMBIA,9
+17/18,Africa,Eastern Africa,SEYCHELLES,3
+17/18,Africa,North Africa,ALGERIA,5
+17/18,Africa,North Africa,EGYPT,86
+17/18,Africa,North Africa,LIBYA,9
+17/18,Africa,North Africa,MOROCCO,5
+17/18,Africa,North Africa,SUDAN,12
+17/18,Africa,North Africa,TUNISIA,4
+17/18,Africa,Southern Africa,BOTSWANA,2
+17/18,Africa,Southern Africa,LESOTHO,1
+17/18,Africa,Southern Africa,NAMIBIA,4
+17/18,Africa,Southern Africa,SOUTH AFRICA,28
+17/18,Africa,Southern Africa,ZIMBABWE,57
+17/18,Africa,West Africa,CAPE VERDE ISLANDS,1
+17/18,Africa,West Africa,COTE D'IVOIRE,1
+17/18,Africa,West Africa,"GAMBIA, THE",2
+17/18,Africa,West Africa,GHANA,26
+17/18,Africa,West Africa,GUINEA,1
+17/18,Africa,West Africa,LIBERIA,1
+17/18,Africa,West Africa,NIGERIA,174
+17/18,Africa,West Africa,SIERRA LEONE,4
+17/18,Antarctica,Antarctica,BRITISH ANTARCTICA,2
+17/18,Asia,Caucasus,AZERBAIJAN,1
+17/18,Asia,Central Asia,KAZAKHSTAN,6
+17/18,Asia,Central Asia,KYRGYZSTAN,1
+17/18,Asia,Central Asia,MONGOLIA,2
+17/18,Asia,Central Asia,TURKMENISTAN,1
+17/18,Asia,East Asia,CHINA,313
+17/18,Asia,East Asia,HONG KONG,142
+17/18,Asia,East Asia,JAPAN,7
+17/18,Asia,East Asia,KOREA (SOUTH),8
+17/18,Asia,East Asia,MACAO,1
+17/18,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",14
+17/18,Asia,Middle East,BAHRAIN,4
+17/18,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",17
+17/18,Asia,Middle East,IRAQ,7
+17/18,Asia,Middle East,ISRAEL,2
+17/18,Asia,Middle East,JORDAN,67
+17/18,Asia,Middle East,KUWAIT,1
+17/18,Asia,Middle East,LEBANON,8
+17/18,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,2
+17/18,Asia,Middle East,OMAN,15
+17/18,Asia,Middle East,QATAR,15
+17/18,Asia,Middle East,SAUDI ARABIA,45
+17/18,Asia,Middle East,SYRIA,7
+17/18,Asia,Middle East,TURKEY,12
+17/18,Asia,Middle East,UNITED ARAB EMIRATES,1
+17/18,Asia,Middle East,YEMEN SOUTH/ADEN/SOCOTRA,1
+17/18,Asia,South Asia,AFGHANISTAN,3
+17/18,Asia,South Asia,BANGLADESH,93
+17/18,Asia,South Asia,INDIA,101
+17/18,Asia,South Asia,MALDIVES,8
+17/18,Asia,South Asia,NEPAL,18
+17/18,Asia,South Asia,PAKISTAN,59
+17/18,Asia,South Asia,SRI LANKA,14
+17/18,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),5
+17/18,Asia,Southeast Asia,BURMA/MYANMAR,20
+17/18,Asia,Southeast Asia,CAMBODIA,5
+17/18,Asia,Southeast Asia,INDONESIA,31
+17/18,Asia,Southeast Asia,MALAYSIA,435
+17/18,Asia,Southeast Asia,PHILIPPINES,40
+17/18,Asia,Southeast Asia,SINGAPORE,11
+17/18,Asia,Southeast Asia,THAILAND,161
+17/18,Asia,Southeast Asia,VIETNAM,263
+17/18,Europe,Eastern Europe,BELARUS,1
+17/18,Europe,Eastern Europe,BULGARIA,62
+17/18,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),1
+17/18,Europe,Eastern Europe,CYPRUS EU,102
+17/18,Europe,Eastern Europe,CZECH REPUBLIC,53
+17/18,Europe,Eastern Europe,HUNGARY,29
+17/18,Europe,Eastern Europe,LATVIA,25
+17/18,Europe,Eastern Europe,LITHUANIA,51
+17/18,Europe,Eastern Europe,MACEDONIA [THE FORMER YUGOSLAV REPUBLIC OF],1
+17/18,Europe,Eastern Europe,POLAND,193
+17/18,Europe,Eastern Europe,ROMANIA,88
+17/18,Europe,Eastern Europe,SLOVAKIA,24
+17/18,Europe,Eastern Europe,UKRAINE,4
+17/18,Europe,Northern Europe,DENMARK,13
+17/18,Europe,Northern Europe,ESTONIA,5
+17/18,Europe,Northern Europe,FINLAND,29
+17/18,Europe,Northern Europe,ISLE OF MAN,2
+17/18,Europe,Northern Europe,NORWAY,19
+17/18,Europe,Northern Europe,SWEDEN,44
+17/18,Europe,Southern Europe,ALBANIA,1
+17/18,Europe,Southern Europe,CROATIA,2
+17/18,Europe,Southern Europe,GIBRALTAR,4
+17/18,Europe,Southern Europe,GREECE,69
+17/18,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",136
+17/18,Europe,Southern Europe,MALTA,3
+17/18,Europe,Southern Europe,MONTENEGRO,1
+17/18,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,88
+17/18,Europe,Southern Europe,SLOVENIA,1
+17/18,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,113
+17/18,Europe,Western Europe,AUSTRIA,14
+17/18,Europe,Western Europe,BELGIUM,12
+17/18,Europe,Western Europe,ENGLAND,14
+17/18,Europe,Western Europe,FRANCE {INCLUDES CORSICA},76
+17/18,Europe,Western Europe,GERMANY,100
+17/18,Europe,Western Europe,GUERNSEY,3
+17/18,Europe,Western Europe,IRELAND,130
+17/18,Europe,Western Europe,JERSEY,2
+17/18,Europe,Western Europe,LUXEMBOURG,1
+17/18,Europe,Western Europe,NETHERLANDS,96
+17/18,Europe,Western Europe,SWITZERLAND,9
+17/18,Europe/Asia,Eastern Europe,RUSSIA,16
+17/18,North America,Caribbean,ANGUILLA,2
+17/18,North America,Caribbean,BAHAMAS,1
+17/18,North America,Caribbean,BARBADOS,3
+17/18,North America,Caribbean,BERMUDA,14
+17/18,North America,Caribbean,BRITISH VIRGIN ISLANDS,3
+17/18,North America,Caribbean,CAYMAN ISLANDS,1
+17/18,North America,Caribbean,CUBA,1
+17/18,North America,Caribbean,DOMINICA,3
+17/18,North America,Caribbean,JAMAICA,12
+17/18,North America,Caribbean,ST KITTS NEVIS,1
+17/18,North America,Caribbean,ST LUCIA,2
+17/18,North America,Caribbean,TRINIDAD AND TOBAGO,5
+17/18,North America,Caribbean,TURKS AND CAICOS ISLANDS,1
+17/18,North America,Central America,EL SALVADOR,2
+17/18,North America,Central America,HONDURAS,2
+17/18,North America,Central America,NICARAGUA,1
+17/18,North America,North America,CANADA,14
+17/18,North America,North America,MEXICO,14
+17/18,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,56
+17/18,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,13
+17/18,Oceania,Oceania,FIJI,1
+17/18,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,2
+17/18,South America,South America,BRAZIL,14
+17/18,South America,South America,COLOMBIA,8
+17/18,South America,South America,ECUADOR,4
+17/18,South America,South America,FALKLAND ISLANDS [FALKLAND ISLANDS (MALVINAS)],1
+17/18,South America,South America,GUYANA,2
+18/19,Africa,Central Africa,ANGOLA,10
+18/19,Africa,Central Africa,CAMEROON,6
+18/19,Africa,Central Africa,CONGO,2
+18/19,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},4
+18/19,Africa,East Africa,BURUNDI,1
+18/19,Africa,East Africa,DJIBOUTI,1
+18/19,Africa,East Africa,ETHIOPIA,1
+18/19,Africa,East Africa,KENYA,34
+18/19,Africa,East Africa,MADAGASCAR,1
+18/19,Africa,East Africa,MALAWI,5
+18/19,Africa,East Africa,MAURITIUS,47
+18/19,Africa,East Africa,SOMALIA,13
+18/19,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",3
+18/19,Africa,East Africa,UGANDA,19
+18/19,Africa,East Africa,ZAMBIA,8
+18/19,Africa,Eastern Africa,SEYCHELLES,3
+18/19,Africa,North Africa,ALGERIA,2
+18/19,Africa,North Africa,EGYPT,95
+18/19,Africa,North Africa,LIBYA,6
+18/19,Africa,North Africa,MOROCCO,6
+18/19,Africa,North Africa,SUDAN,16
+18/19,Africa,North Africa,TUNISIA,2
+18/19,Africa,Southern Africa,BOTSWANA,1
+18/19,Africa,Southern Africa,NAMIBIA,8
+18/19,Africa,Southern Africa,SOUTH AFRICA,29
+18/19,Africa,Southern Africa,ZIMBABWE,54
+18/19,Africa,West Africa,CAPE VERDE ISLANDS,1
+18/19,Africa,West Africa,COTE D'IVOIRE,3
+18/19,Africa,West Africa,"GAMBIA, THE",2
+18/19,Africa,West Africa,GHANA,23
+18/19,Africa,West Africa,GUINEA,1
+18/19,Africa,West Africa,NIGERIA,193
+18/19,Africa,West Africa,SIERRA LEONE,3
+18/19,Asia,Caucasus,AZERBAIJAN,1
+18/19,Asia,Central Asia,KAZAKHSTAN,6
+18/19,Asia,Central Asia,KYRGYZSTAN,1
+18/19,Asia,Central Asia,MONGOLIA,2
+18/19,Asia,Central Asia,TURKMENISTAN,1
+18/19,Asia,Central Asia,UZBEKISTAN,1
+18/19,Asia,East Asia,CHINA,313
+18/19,Asia,East Asia,HONG KONG,35
+18/19,Asia,East Asia,JAPAN,5
+18/19,Asia,East Asia,KOREA (SOUTH),11
+18/19,Asia,East Asia,MACAO,1
+18/19,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",8
+18/19,Asia,Middle East,BAHRAIN,8
+18/19,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",12
+18/19,Asia,Middle East,IRAQ,9
+18/19,Asia,Middle East,ISRAEL,1
+18/19,Asia,Middle East,JORDAN,76
+18/19,Asia,Middle East,LEBANON,8
+18/19,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,1
+18/19,Asia,Middle East,OMAN,13
+18/19,Asia,Middle East,QATAR,37
+18/19,Asia,Middle East,SAUDI ARABIA,51
+18/19,Asia,Middle East,SYRIA,11
+18/19,Asia,Middle East,TURKEY,13
+18/19,Asia,Middle East,YEMEN,1
+18/19,Asia,Middle East,YEMEN SOUTH/ADEN/SOCOTRA,2
+18/19,Asia,South Asia,AFGHANISTAN,1
+18/19,Asia,South Asia,BANGLADESH,106
+18/19,Asia,South Asia,INDIA,103
+18/19,Asia,South Asia,MALDIVES,6
+18/19,Asia,South Asia,NEPAL,22
+18/19,Asia,South Asia,PAKISTAN,73
+18/19,Asia,South Asia,SRI LANKA,21
+18/19,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),6
+18/19,Asia,Southeast Asia,BURMA/MYANMAR,24
+18/19,Asia,Southeast Asia,CAMBODIA,8
+18/19,Asia,Southeast Asia,INDONESIA,31
+18/19,Asia,Southeast Asia,LAOS,1
+18/19,Asia,Southeast Asia,MALAYSIA,419
+18/19,Asia,Southeast Asia,PHILIPPINES,39
+18/19,Asia,Southeast Asia,SINGAPORE,9
+18/19,Asia,Southeast Asia,THAILAND,153
+18/19,Asia,Southeast Asia,VIETNAM,268
+18/19,Europe,Eastern Europe,BULGARIA,79
+18/19,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),1
+18/19,Europe,Eastern Europe,CYPRUS EU,95
+18/19,Europe,Eastern Europe,CZECH REPUBLIC,70
+18/19,Europe,Eastern Europe,HUNGARY,38
+18/19,Europe,Eastern Europe,LATVIA,26
+18/19,Europe,Eastern Europe,LITHUANIA,66
+18/19,Europe,Eastern Europe,MACEDONIA [THE FORMER YUGOSLAV REPUBLIC OF],1
+18/19,Europe,Eastern Europe,POLAND,226
+18/19,Europe,Eastern Europe,ROMANIA,101
+18/19,Europe,Eastern Europe,SLOVAKIA,27
+18/19,Europe,Eastern Europe,UKRAINE,4
+18/19,Europe,Northern Europe,DENMARK,20
+18/19,Europe,Northern Europe,ESTONIA,4
+18/19,Europe,Northern Europe,FINLAND,22
+18/19,Europe,Northern Europe,ICELAND,1
+18/19,Europe,Northern Europe,ISLE OF MAN,2
+18/19,Europe,Northern Europe,NORWAY,18
+18/19,Europe,Northern Europe,SWEDEN,42
+18/19,Europe,Southern Europe,ALBANIA,3
+18/19,Europe,Southern Europe,GIBRALTAR,3
+18/19,Europe,Southern Europe,GREECE,62
+18/19,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",158
+18/19,Europe,Southern Europe,KOSOVO,1
+18/19,Europe,Southern Europe,MALTA,3
+18/19,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,120
+18/19,Europe,Southern Europe,SLOVENIA,2
+18/19,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,124
+18/19,Europe,Western Europe,AUSTRIA,12
+18/19,Europe,Western Europe,BELGIUM,15
+18/19,Europe,Western Europe,ENGLAND,17
+18/19,Europe,Western Europe,FRANCE {INCLUDES CORSICA},74
+18/19,Europe,Western Europe,GERMANY,98
+18/19,Europe,Western Europe,GUERNSEY,3
+18/19,Europe,Western Europe,IRELAND,120
+18/19,Europe,Western Europe,JERSEY,2
+18/19,Europe,Western Europe,LUXEMBOURG,2
+18/19,Europe,Western Europe,NETHERLANDS,103
+18/19,Europe,Western Europe,SWITZERLAND,9
+18/19,Europe/Asia,Eastern Europe,RUSSIA,15
+18/19,North America,Caribbean,ANGUILLA,1
+18/19,North America,Caribbean,BAHAMAS,2
+18/19,North America,Caribbean,BARBADOS,2
+18/19,North America,Caribbean,BERMUDA,13
+18/19,North America,Caribbean,BRITISH VIRGIN ISLANDS,4
+18/19,North America,Caribbean,CAYMAN ISLANDS,1
+18/19,North America,Caribbean,CUBA,1
+18/19,North America,Caribbean,DOMINICA,4
+18/19,North America,Caribbean,JAMAICA,18
+18/19,North America,Caribbean,ST LUCIA,2
+18/19,North America,Caribbean,ST VINCENT AND THE GRENADINES,2
+18/19,North America,Caribbean,TRINIDAD AND TOBAGO,4
+18/19,North America,Central America,EL SALVADOR,1
+18/19,North America,Central America,HONDURAS,1
+18/19,North America,North America,CANADA,16
+18/19,North America,North America,MEXICO,11
+18/19,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,59
+18/19,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,12
+18/19,Oceania,Oceania,FIJI,1
+18/19,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,4
+18/19,South America,South America,ARGENTINA,1
+18/19,South America,South America,BRAZIL,16
+18/19,South America,South America,CHILE,1
+18/19,South America,South America,COLOMBIA,10
+18/19,South America,South America,ECUADOR,4
+18/19,South America,South America,FALKLAND ISLANDS [FALKLAND ISLANDS (MALVINAS)],1
+18/19,South America,South America,GUYANA,2
+18/19,South America,South America,PERU,3
+18/19,South America,South America,VENEZUELA,2
+19/20,Africa,Central Africa,ANGOLA,10
+19/20,Africa,Central Africa,CAMEROON,6
+19/20,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},2
+19/20,Africa,East Africa,BURUNDI,1
+19/20,Africa,East Africa,DJIBOUTI,1
+19/20,Africa,East Africa,ERITREA,4
+19/20,Africa,East Africa,ETHIOPIA,2
+19/20,Africa,East Africa,KENYA,41
+19/20,Africa,East Africa,MALAWI,4
+19/20,Africa,East Africa,MAURITIUS,55
+19/20,Africa,East Africa,RWANDA,1
+19/20,Africa,East Africa,SOMALIA,19
+19/20,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",3
+19/20,Africa,East Africa,UGANDA,20
+19/20,Africa,East Africa,ZAMBIA,16
+19/20,Africa,Eastern Africa,SEYCHELLES,1
+19/20,Africa,North Africa,ALGERIA,6
+19/20,Africa,North Africa,EGYPT,89
+19/20,Africa,North Africa,LIBYA,2
+19/20,Africa,North Africa,MOROCCO,6
+19/20,Africa,North Africa,SUDAN,10
+19/20,Africa,North Africa,TUNISIA,3
+19/20,Africa,Southern Africa,BOTSWANA,1
+19/20,Africa,Southern Africa,NAMIBIA,19
+19/20,Africa,Southern Africa,SOUTH AFRICA,35
+19/20,Africa,Southern Africa,ST HELENA,1
+19/20,Africa,Southern Africa,ZIMBABWE,54
+19/20,Africa,West Africa,CAPE VERDE ISLANDS,1
+19/20,Africa,West Africa,COTE D'IVOIRE,3
+19/20,Africa,West Africa,"GAMBIA, THE",4
+19/20,Africa,West Africa,GHANA,41
+19/20,Africa,West Africa,GUINEA,1
+19/20,Africa,West Africa,NIGERIA,243
+19/20,Africa,West Africa,SIERRA LEONE,3
+19/20,Antarctica,Antarctica,BRITISH ANTARCTICA,1
+19/20,Asia,Caucasus,AZERBAIJAN,3
+19/20,Asia,Central Asia,KAZAKHSTAN,8
+19/20,Asia,Central Asia,MONGOLIA,2
+19/20,Asia,Central Asia,TAJIKISTAN,1
+19/20,Asia,Central Asia,TURKMENISTAN,1
+19/20,Asia,Central Asia,UZBEKISTAN,1
+19/20,Asia,East Asia,CHINA,553
+19/20,Asia,East Asia,HONG KONG,39
+19/20,Asia,East Asia,JAPAN,3
+19/20,Asia,East Asia,KOREA (SOUTH),9
+19/20,Asia,East Asia,MACAO,1
+19/20,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",15
+19/20,Asia,Middle East,BAHRAIN,8
+19/20,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",18
+19/20,Asia,Middle East,IRAQ,14
+19/20,Asia,Middle East,ISRAEL,1
+19/20,Asia,Middle East,JORDAN,77
+19/20,Asia,Middle East,LEBANON,9
+19/20,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,1
+19/20,Asia,Middle East,OMAN,19
+19/20,Asia,Middle East,QATAR,59
+19/20,Asia,Middle East,SAUDI ARABIA,72
+19/20,Asia,Middle East,SYRIA,12
+19/20,Asia,Middle East,TURKEY,19
+19/20,Asia,Middle East,UNITED ARAB EMIRATES,1
+19/20,Asia,Middle East,YEMEN,1
+19/20,Asia,Middle East,YEMEN SOUTH/ADEN/SOCOTRA,3
+19/20,Asia,South Asia,AFGHANISTAN,1
+19/20,Asia,South Asia,BANGLADESH,148
+19/20,Asia,South Asia,INDIA,123
+19/20,Asia,South Asia,MALDIVES,9
+19/20,Asia,South Asia,NEPAL,24
+19/20,Asia,South Asia,PAKISTAN,89
+19/20,Asia,South Asia,SRI LANKA,23
+19/20,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),9
+19/20,Asia,Southeast Asia,BURMA/MYANMAR,25
+19/20,Asia,Southeast Asia,CAMBODIA,4
+19/20,Asia,Southeast Asia,INDONESIA,35
+19/20,Asia,Southeast Asia,LAOS,1
+19/20,Asia,Southeast Asia,MALAYSIA,431
+19/20,Asia,Southeast Asia,PHILIPPINES,43
+19/20,Asia,Southeast Asia,SINGAPORE,9
+19/20,Asia,Southeast Asia,THAILAND,168
+19/20,Asia,Southeast Asia,VIETNAM,256
+19/20,Europe,Eastern Europe,BULGARIA,99
+19/20,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),1
+19/20,Europe,Eastern Europe,CYPRUS EU,80
+19/20,Europe,Eastern Europe,CZECH REPUBLIC,67
+19/20,Europe,Eastern Europe,HUNGARY,42
+19/20,Europe,Eastern Europe,LATVIA,27
+19/20,Europe,Eastern Europe,LITHUANIA,71
+19/20,Europe,Eastern Europe,"MOLDOVA [MOLDOVA, REPUBLIC OF]",1
+19/20,Europe,Eastern Europe,POLAND,272
+19/20,Europe,Eastern Europe,ROMANIA,99
+19/20,Europe,Eastern Europe,SLOVAKIA,19
+19/20,Europe,Eastern Europe,UKRAINE,3
+19/20,Europe,Northern Europe,DENMARK,19
+19/20,Europe,Northern Europe,ESTONIA,4
+19/20,Europe,Northern Europe,FINLAND,32
+19/20,Europe,Northern Europe,ICELAND,3
+19/20,Europe,Northern Europe,ISLE OF MAN,2
+19/20,Europe,Northern Europe,NORWAY,20
+19/20,Europe,Northern Europe,SWEDEN,35
+19/20,Europe,Southern Europe,ALBANIA,2
+19/20,Europe,Southern Europe,CROATIA,1
+19/20,Europe,Southern Europe,GIBRALTAR,10
+19/20,Europe,Southern Europe,GREECE,67
+19/20,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",165
+19/20,Europe,Southern Europe,KOSOVO,2
+19/20,Europe,Southern Europe,MALTA,3
+19/20,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,131
+19/20,Europe,Southern Europe,SLOVENIA,4
+19/20,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,145
+19/20,Europe,Western Europe,AUSTRIA,6
+19/20,Europe,Western Europe,BELGIUM,11
+19/20,Europe,Western Europe,ENGLAND,8
+19/20,Europe,Western Europe,FRANCE {INCLUDES CORSICA},93
+19/20,Europe,Western Europe,GERMANY,125
+19/20,Europe,Western Europe,GUERNSEY,4
+19/20,Europe,Western Europe,IRELAND,127
+19/20,Europe,Western Europe,JERSEY,3
+19/20,Europe,Western Europe,LUXEMBOURG,2
+19/20,Europe,Western Europe,NETHERLANDS,104
+19/20,Europe,Western Europe,SWITZERLAND,12
+19/20,Europe/Asia,Eastern Europe,RUSSIA,13
+19/20,North America,Caribbean,ANTIGUA AND BARBUDA,3
+19/20,North America,Caribbean,BAHAMAS,4
+19/20,North America,Caribbean,BARBADOS,3
+19/20,North America,Caribbean,BERMUDA,7
+19/20,North America,Caribbean,BRITISH VIRGIN ISLANDS,6
+19/20,North America,Caribbean,CAYMAN ISLANDS,3
+19/20,North America,Caribbean,CUBA,1
+19/20,North America,Caribbean,DOMINICA,4
+19/20,North America,Caribbean,HAITI,1
+19/20,North America,Caribbean,JAMAICA,22
+19/20,North America,Caribbean,ST LUCIA,1
+19/20,North America,Caribbean,ST VINCENT AND THE GRENADINES,2
+19/20,North America,Caribbean,TRINIDAD AND TOBAGO,6
+19/20,North America,Caribbean,TURKS AND CAICOS ISLANDS,1
+19/20,North America,North America,CANADA,21
+19/20,North America,North America,MEXICO,15
+19/20,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,75
+19/20,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,12
+19/20,Oceania,Oceania,FIJI,1
+19/20,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,7
+19/20,South America,South America,ARGENTINA,1
+19/20,South America,South America,BRAZIL,20
+19/20,South America,South America,CHILE,3
+19/20,South America,South America,COLOMBIA,9
+19/20,South America,South America,ECUADOR,8
+19/20,South America,South America,GUYANA,3
+19/20,South America,South America,PERU,5
+19/20,South America,South America,VENEZUELA,3
+20/21,Africa,Central Africa,ANGOLA,6
+20/21,Africa,Central Africa,CAMEROON,9
+20/21,Africa,Central Africa,CHAD,1
+20/21,Africa,Central Africa,CONGO,1
+20/21,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},4
+20/21,Africa,Central Africa,GABON,1
+20/21,Africa,East Africa,ERITREA,7
+20/21,Africa,East Africa,ETHIOPIA,2
+20/21,Africa,East Africa,KENYA,43
+20/21,Africa,East Africa,MADAGASCAR,1
+20/21,Africa,East Africa,MALAWI,6
+20/21,Africa,East Africa,MAURITIUS,62
+20/21,Africa,East Africa,MOZAMBIQUE,1
+20/21,Africa,East Africa,RWANDA,3
+20/21,Africa,East Africa,SOMALIA,21
+20/21,Africa,East Africa,SOUTH SUDAN,1
+20/21,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",3
+20/21,Africa,East Africa,UGANDA,25
+20/21,Africa,East Africa,ZAMBIA,15
+20/21,Africa,Eastern Africa,SEYCHELLES,1
+20/21,Africa,North Africa,ALGERIA,13
+20/21,Africa,North Africa,EGYPT,109
+20/21,Africa,North Africa,LIBYA,4
+20/21,Africa,North Africa,MOROCCO,12
+20/21,Africa,North Africa,SUDAN,18
+20/21,Africa,North Africa,TUNISIA,2
+20/21,Africa,Southern Africa,BOTSWANA,2
+20/21,Africa,Southern Africa,NAMIBIA,9
+20/21,Africa,Southern Africa,SOUTH AFRICA,46
+20/21,Africa,Southern Africa,ST HELENA,1
+20/21,Africa,Southern Africa,ZIMBABWE,71
+20/21,Africa,West Africa,COTE D'IVOIRE,1
+20/21,Africa,West Africa,"GAMBIA, THE",7
+20/21,Africa,West Africa,GHANA,49
+20/21,Africa,West Africa,GUINEA,2
+20/21,Africa,West Africa,IVORY COAST {COTE D IVOIRE},1
+20/21,Africa,West Africa,NIGERIA,425
+20/21,Africa,West Africa,SIERRA LEONE,4
+20/21,Antarctica,Antarctica,BRITISH ANTARCTICA,1
+20/21,Asia,Caucasus,AZERBAIJAN,3
+20/21,Asia,Central Asia,KAZAKHSTAN,7
+20/21,Asia,Central Asia,KYRGYZSTAN,1
+20/21,Asia,Central Asia,UZBEKISTAN,1
+20/21,Asia,East Asia,CHINA,564
+20/21,Asia,East Asia,HONG KONG,99
+20/21,Asia,East Asia,JAPAN,3
+20/21,Asia,East Asia,KOREA (SOUTH),9
+20/21,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",9
+20/21,Asia,Middle East,BAHRAIN,10
+20/21,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",17
+20/21,Asia,Middle East,IRAQ,14
+20/21,Asia,Middle East,ISRAEL,2
+20/21,Asia,Middle East,JORDAN,81
+20/21,Asia,Middle East,KUWAIT,3
+20/21,Asia,Middle East,LEBANON,9
+20/21,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,2
+20/21,Asia,Middle East,OMAN,45
+20/21,Asia,Middle East,QATAR,107
+20/21,Asia,Middle East,SAUDI ARABIA,83
+20/21,Asia,Middle East,SYRIA,15
+20/21,Asia,Middle East,TURKEY,25
+20/21,Asia,Middle East,UNITED ARAB EMIRATES,3
+20/21,Asia,Middle East,YEMEN,3
+20/21,Asia,Middle East,YEMEN SOUTH/ADEN/SOCOTRA,2
+20/21,Asia,South Asia,AFGHANISTAN,1
+20/21,Asia,South Asia,BANGLADESH,239
+20/21,Asia,South Asia,INDIA,348
+20/21,Asia,South Asia,MALDIVES,11
+20/21,Asia,South Asia,NEPAL,47
+20/21,Asia,South Asia,PAKISTAN,241
+20/21,Asia,South Asia,SRI LANKA,61
+20/21,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),12
+20/21,Asia,Southeast Asia,BURMA/MYANMAR,20
+20/21,Asia,Southeast Asia,CAMBODIA,2
+20/21,Asia,Southeast Asia,INDONESIA,32
+20/21,Asia,Southeast Asia,LAOS,1
+20/21,Asia,Southeast Asia,MALAYSIA,323
+20/21,Asia,Southeast Asia,PHILIPPINES,37
+20/21,Asia,Southeast Asia,SINGAPORE,6
+20/21,Asia,Southeast Asia,THAILAND,127
+20/21,Asia,Southeast Asia,VIETNAM,162
+20/21,Europe,Eastern Europe,BULGARIA,101
+20/21,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),1
+20/21,Europe,Eastern Europe,CYPRUS EU,69
+20/21,Europe,Eastern Europe,CZECH REPUBLIC,70
+20/21,Europe,Eastern Europe,HUNGARY,45
+20/21,Europe,Eastern Europe,LATVIA,29
+20/21,Europe,Eastern Europe,LITHUANIA,76
+20/21,Europe,Eastern Europe,"MOLDOVA [MOLDOVA, REPUBLIC OF]",1
+20/21,Europe,Eastern Europe,POLAND,303
+20/21,Europe,Eastern Europe,ROMANIA,109
+20/21,Europe,Eastern Europe,SLOVAKIA,17
+20/21,Europe,Eastern Europe,UKRAINE,4
+20/21,Europe,Northern Europe,DENMARK,15
+20/21,Europe,Northern Europe,ESTONIA,4
+20/21,Europe,Northern Europe,FINLAND,33
+20/21,Europe,Northern Europe,ICELAND,4
+20/21,Europe,Northern Europe,ISLE OF MAN,4
+20/21,Europe,Northern Europe,NORWAY,17
+20/21,Europe,Northern Europe,SWEDEN,32
+20/21,Europe,Southern Europe,ALBANIA,2
+20/21,Europe,Southern Europe,CROATIA,4
+20/21,Europe,Southern Europe,GIBRALTAR,10
+20/21,Europe,Southern Europe,GREECE,68
+20/21,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",164
+20/21,Europe,Southern Europe,KOSOVO,2
+20/21,Europe,Southern Europe,MALTA,2
+20/21,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,150
+20/21,Europe,Southern Europe,SLOVENIA,4
+20/21,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,155
+20/21,Europe,Western Europe,AUSTRIA,7
+20/21,Europe,Western Europe,BELGIUM,8
+20/21,Europe,Western Europe,ENGLAND,6
+20/21,Europe,Western Europe,FRANCE {INCLUDES CORSICA},76
+20/21,Europe,Western Europe,GERMANY,102
+20/21,Europe,Western Europe,GUERNSEY,4
+20/21,Europe,Western Europe,IRELAND,137
+20/21,Europe,Western Europe,JERSEY,7
+20/21,Europe,Western Europe,LUXEMBOURG,1
+20/21,Europe,Western Europe,NETHERLANDS,111
+20/21,Europe,Western Europe,SWITZERLAND,10
+20/21,Europe/Asia,Eastern Europe,RUSSIA,11
+20/21,North America,Caribbean,ANTIGUA AND BARBUDA,3
+20/21,North America,Caribbean,BAHAMAS,4
+20/21,North America,Caribbean,BARBADOS,3
+20/21,North America,Caribbean,BERMUDA,6
+20/21,North America,Caribbean,BRITISH VIRGIN ISLANDS,7
+20/21,North America,Caribbean,CAYMAN ISLANDS,4
+20/21,North America,Caribbean,DOMINICA,4
+20/21,North America,Caribbean,HAITI,1
+20/21,North America,Caribbean,JAMAICA,23
+20/21,North America,Caribbean,ST VINCENT AND THE GRENADINES,1
+20/21,North America,Caribbean,TRINIDAD AND TOBAGO,4
+20/21,North America,Caribbean,TURKS AND CAICOS ISLANDS,1
+20/21,North America,Central America,PANAMA,1
+20/21,North America,North America,CANADA,23
+20/21,North America,North America,MEXICO,16
+20/21,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,88
+20/21,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,13
+20/21,Oceania,Oceania,FIJI,1
+20/21,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,6
+20/21,South America,South America,ARGENTINA,2
+20/21,South America,South America,BRAZIL,17
+20/21,South America,South America,CHILE,4
+20/21,South America,South America,COLOMBIA,8
+20/21,South America,South America,ECUADOR,10
+20/21,South America,South America,GUYANA,3
+20/21,South America,South America,PERU,4
+20/21,South America,South America,URUGUAY,1
+20/21,South America,South America,VENEZUELA,5
+21/22,Africa,Central Africa,ANGOLA,7
+21/22,Africa,Central Africa,CAMEROON,24
+21/22,Africa,Central Africa,CHAD,1
+21/22,Africa,Central Africa,CONGO,1
+21/22,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},3
+21/22,Africa,Central Africa,GABON,1
+21/22,Africa,East Africa,ERITREA,10
+21/22,Africa,East Africa,ETHIOPIA,2
+21/22,Africa,East Africa,KENYA,52
+21/22,Africa,East Africa,MALAWI,4
+21/22,Africa,East Africa,MAURITIUS,46
+21/22,Africa,East Africa,MOZAMBIQUE,1
+21/22,Africa,East Africa,RWANDA,2
+21/22,Africa,East Africa,SOMALIA,24
+21/22,Africa,East Africa,SOUTH SUDAN,1
+21/22,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",2
+21/22,Africa,East Africa,UGANDA,21
+21/22,Africa,East Africa,ZAMBIA,11
+21/22,Africa,Eastern Africa,SEYCHELLES,3
+21/22,Africa,North Africa,ALGERIA,23
+21/22,Africa,North Africa,EGYPT,110
+21/22,Africa,North Africa,LIBYA,4
+21/22,Africa,North Africa,MOROCCO,12
+21/22,Africa,North Africa,SUDAN,20
+21/22,Africa,North Africa,TUNISIA,3
+21/22,Africa,Southern Africa,BOTSWANA,4
+21/22,Africa,Southern Africa,NAMIBIA,5
+21/22,Africa,Southern Africa,SOUTH AFRICA,46
+21/22,Africa,Southern Africa,ST HELENA,1
+21/22,Africa,Southern Africa,ZIMBABWE,52
+21/22,Africa,West Africa,COTE D'IVOIRE,1
+21/22,Africa,West Africa,"GAMBIA, THE",7
+21/22,Africa,West Africa,GHANA,112
+21/22,Africa,West Africa,GUINEA,2
+21/22,Africa,West Africa,IVORY COAST {COTE D IVOIRE},1
+21/22,Africa,West Africa,NIGERIA,916
+21/22,Africa,West Africa,SENEGAL,1
+21/22,Africa,West Africa,SIERRA LEONE,4
+21/22,Asia,Caucasus,ARMENIA,1
+21/22,Asia,Caucasus,AZERBAIJAN,1
+21/22,Asia,Central Asia,KAZAKHSTAN,6
+21/22,Asia,Central Asia,UZBEKISTAN,1
+21/22,Asia,East Asia,CHINA,559
+21/22,Asia,East Asia,HONG KONG,151
+21/22,Asia,East Asia,JAPAN,7
+21/22,Asia,East Asia,KOREA (SOUTH),3
+21/22,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",9
+21/22,Asia,Middle East,BAHRAIN,10
+21/22,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",33
+21/22,Asia,Middle East,IRAQ,14
+21/22,Asia,Middle East,ISRAEL,3
+21/22,Asia,Middle East,JORDAN,81
+21/22,Asia,Middle East,KUWAIT,10
+21/22,Asia,Middle East,LEBANON,12
+21/22,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,3
+21/22,Asia,Middle East,OMAN,35
+21/22,Asia,Middle East,QATAR,101
+21/22,Asia,Middle East,SAUDI ARABIA,91
+21/22,Asia,Middle East,SYRIA,13
+21/22,Asia,Middle East,TURKEY,42
+21/22,Asia,Middle East,UNITED ARAB EMIRATES,3
+21/22,Asia,Middle East,YEMEN,3
+21/22,Asia,South Asia,AFGHANISTAN,1
+21/22,Asia,South Asia,BANGLADESH,332
+21/22,Asia,South Asia,BHUTAN,1
+21/22,Asia,South Asia,INDIA,544
+21/22,Asia,South Asia,MALDIVES,10
+21/22,Asia,South Asia,NEPAL,74
+21/22,Asia,South Asia,PAKISTAN,484
+21/22,Asia,South Asia,SRI LANKA,188
+21/22,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),10
+21/22,Asia,Southeast Asia,BURMA/MYANMAR,52
+21/22,Asia,Southeast Asia,CAMBODIA,2
+21/22,Asia,Southeast Asia,INDONESIA,35
+21/22,Asia,Southeast Asia,MALAYSIA,286
+21/22,Asia,Southeast Asia,PHILIPPINES,34
+21/22,Asia,Southeast Asia,SINGAPORE,9
+21/22,Asia,Southeast Asia,THAILAND,101
+21/22,Asia,Southeast Asia,VIETNAM,117
+21/22,Europe,Eastern Europe,BELARUS,1
+21/22,Europe,Eastern Europe,BULGARIA,85
+21/22,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),1
+21/22,Europe,Eastern Europe,CYPRUS EU,37
+21/22,Europe,Eastern Europe,CZECH REPUBLIC,48
+21/22,Europe,Eastern Europe,HUNGARY,43
+21/22,Europe,Eastern Europe,LATVIA,26
+21/22,Europe,Eastern Europe,LITHUANIA,61
+21/22,Europe,Eastern Europe,"MOLDOVA [MOLDOVA, REPUBLIC OF]",2
+21/22,Europe,Eastern Europe,POLAND,276
+21/22,Europe,Eastern Europe,ROMANIA,94
+21/22,Europe,Eastern Europe,SERBIA,1
+21/22,Europe,Eastern Europe,SLOVAKIA,13
+21/22,Europe,Eastern Europe,UKRAINE,5
+21/22,Europe,Northern Europe,DENMARK,12
+21/22,Europe,Northern Europe,ESTONIA,6
+21/22,Europe,Northern Europe,FINLAND,29
+21/22,Europe,Northern Europe,ICELAND,3
+21/22,Europe,Northern Europe,ISLE OF MAN,4
+21/22,Europe,Northern Europe,NORWAY,14
+21/22,Europe,Northern Europe,SWEDEN,26
+21/22,Europe,Southern Europe,ALBANIA,4
+21/22,Europe,Southern Europe,CROATIA,6
+21/22,Europe,Southern Europe,GIBRALTAR,9
+21/22,Europe,Southern Europe,GREECE,67
+21/22,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",151
+21/22,Europe,Southern Europe,KOSOVO,2
+21/22,Europe,Southern Europe,MALTA,5
+21/22,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,141
+21/22,Europe,Southern Europe,SLOVENIA,2
+21/22,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,147
+21/22,Europe,Western Europe,AUSTRIA,7
+21/22,Europe,Western Europe,BELGIUM,11
+21/22,Europe,Western Europe,ENGLAND,1
+21/22,Europe,Western Europe,FRANCE {INCLUDES CORSICA},92
+21/22,Europe,Western Europe,GERMANY,101
+21/22,Europe,Western Europe,GUERNSEY,4
+21/22,Europe,Western Europe,IRELAND,133
+21/22,Europe,Western Europe,JERSEY,11
+21/22,Europe,Western Europe,LUXEMBOURG,1
+21/22,Europe,Western Europe,NETHERLANDS,106
+21/22,Europe,Western Europe,SWITZERLAND,9
+21/22,Europe/Asia,Eastern Europe,RUSSIA,13
+21/22,North America,Caribbean,ANTIGUA AND BARBUDA,3
+21/22,North America,Caribbean,BAHAMAS,6
+21/22,North America,Caribbean,BARBADOS,4
+21/22,North America,Caribbean,BERMUDA,4
+21/22,North America,Caribbean,BRITISH VIRGIN ISLANDS,6
+21/22,North America,Caribbean,CAYMAN ISLANDS,4
+21/22,North America,Caribbean,DOMINICA,4
+21/22,North America,Caribbean,JAMAICA,19
+21/22,North America,Caribbean,ST KITTS NEVIS,2
+21/22,North America,Caribbean,TRINIDAD AND TOBAGO,8
+21/22,North America,Central America,COSTA RICA,1
+21/22,North America,Central America,PANAMA,3
+21/22,North America,North America,CANADA,22
+21/22,North America,North America,MEXICO,22
+21/22,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,94
+21/22,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,9
+21/22,Oceania,Oceania,FIJI,1
+21/22,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,4
+21/22,South America,South America,ARGENTINA,2
+21/22,South America,South America,BOLIVIA,1
+21/22,South America,South America,BRAZIL,17
+21/22,South America,South America,CHILE,4
+21/22,South America,South America,COLOMBIA,5
+21/22,South America,South America,ECUADOR,8
+21/22,South America,South America,PERU,9
+21/22,South America,South America,URUGUAY,1
+21/22,South America,South America,VENEZUELA,5
+22/23,Africa,Central Africa,ANGOLA,5
+22/23,Africa,Central Africa,CAMEROON,21
+22/23,Africa,Central Africa,CONGO,1
+22/23,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},3
+22/23,Africa,East Africa,ERITREA,6
+22/23,Africa,East Africa,KENYA,53
+22/23,Africa,East Africa,MALAWI,3
+22/23,Africa,East Africa,MAURITIUS,53
+22/23,Africa,East Africa,MOZAMBIQUE,2
+22/23,Africa,East Africa,RWANDA,3
+22/23,Africa,East Africa,SOMALIA,16
+22/23,Africa,East Africa,SOUTH SUDAN,1
+22/23,Africa,East Africa,UGANDA,16
+22/23,Africa,East Africa,ZAMBIA,9
+22/23,Africa,Eastern Africa,SEYCHELLES,3
+22/23,Africa,North Africa,ALGERIA,30
+22/23,Africa,North Africa,EGYPT,124
+22/23,Africa,North Africa,LIBYA,7
+22/23,Africa,North Africa,MOROCCO,9
+22/23,Africa,North Africa,SUDAN,13
+22/23,Africa,North Africa,TUNISIA,4
+22/23,Africa,Southern Africa,BOTSWANA,7
+22/23,Africa,Southern Africa,NAMIBIA,4
+22/23,Africa,Southern Africa,SOUTH AFRICA,29
+22/23,Africa,Southern Africa,ST HELENA,1
+22/23,Africa,Southern Africa,ZIMBABWE,35
+22/23,Africa,West Africa,COTE D'IVOIRE,2
+22/23,Africa,West Africa,"GAMBIA, THE",4
+22/23,Africa,West Africa,GHANA,134
+22/23,Africa,West Africa,GUINEA,1
+22/23,Africa,West Africa,IVORY COAST {COTE D IVOIRE},1
+22/23,Africa,West Africa,MAURITANIA,1
+22/23,Africa,West Africa,NIGERIA,1246
+22/23,Africa,West Africa,SENEGAL,1
+22/23,Africa,West Africa,SIERRA LEONE,3
+22/23,Asia,Caucasus,ARMENIA,1
+22/23,Asia,Caucasus,AZERBAIJAN,2
+22/23,Asia,Caucasus,GEORGIA,1
+22/23,Asia,Central Asia,KAZAKHSTAN,7
+22/23,Asia,Central Asia,KYRGYZSTAN,1
+22/23,Asia,Central Asia,UZBEKISTAN,1
+22/23,Asia,East Asia,CHINA,513
+22/23,Asia,East Asia,HONG KONG,206
+22/23,Asia,East Asia,JAPAN,9
+22/23,Asia,East Asia,KOREA (SOUTH),17
+22/23,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",20
+22/23,Asia,Middle East,BAHRAIN,7
+22/23,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",40
+22/23,Asia,Middle East,IRAQ,13
+22/23,Asia,Middle East,ISRAEL,3
+22/23,Asia,Middle East,JORDAN,73
+22/23,Asia,Middle East,KUWAIT,15
+22/23,Asia,Middle East,LEBANON,16
+22/23,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,3
+22/23,Asia,Middle East,OMAN,35
+22/23,Asia,Middle East,QATAR,60
+22/23,Asia,Middle East,SAUDI ARABIA,85
+22/23,Asia,Middle East,SYRIA,14
+22/23,Asia,Middle East,TURKEY,58
+22/23,Asia,Middle East,UNITED ARAB EMIRATES,2
+22/23,Asia,Middle East,YEMEN,2
+22/23,Asia,South Asia,AFGHANISTAN,7
+22/23,Asia,South Asia,BANGLADESH,280
+22/23,Asia,South Asia,BHUTAN,1
+22/23,Asia,South Asia,INDIA,619
+22/23,Asia,South Asia,MALDIVES,7
+22/23,Asia,South Asia,NEPAL,67
+22/23,Asia,South Asia,PAKISTAN,499
+22/23,Asia,South Asia,SRI LANKA,372
+22/23,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),7
+22/23,Asia,Southeast Asia,BURMA/MYANMAR,125
+22/23,Asia,Southeast Asia,CAMBODIA,2
+22/23,Asia,Southeast Asia,INDONESIA,44
+22/23,Asia,Southeast Asia,LAOS,2
+22/23,Asia,Southeast Asia,MALAYSIA,274
+22/23,Asia,Southeast Asia,PHILIPPINES,27
+22/23,Asia,Southeast Asia,SINGAPORE,8
+22/23,Asia,Southeast Asia,THAILAND,147
+22/23,Asia,Southeast Asia,VIETNAM,158
+22/23,Europe,Eastern Europe,BULGARIA,64
+22/23,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),1
+22/23,Europe,Eastern Europe,CYPRUS EU,26
+22/23,Europe,Eastern Europe,CZECH REPUBLIC,34
+22/23,Europe,Eastern Europe,HUNGARY,30
+22/23,Europe,Eastern Europe,LATVIA,16
+22/23,Europe,Eastern Europe,LITHUANIA,39
+22/23,Europe,Eastern Europe,"MOLDOVA [MOLDOVA, REPUBLIC OF]",2
+22/23,Europe,Eastern Europe,POLAND,195
+22/23,Europe,Eastern Europe,ROMANIA,67
+22/23,Europe,Eastern Europe,SERBIA,1
+22/23,Europe,Eastern Europe,SLOVAKIA,14
+22/23,Europe,Eastern Europe,UKRAINE,2
+22/23,Europe,Northern Europe,DENMARK,7
+22/23,Europe,Northern Europe,ESTONIA,6
+22/23,Europe,Northern Europe,FINLAND,15
+22/23,Europe,Northern Europe,ISLE OF MAN,2
+22/23,Europe,Northern Europe,NORWAY,14
+22/23,Europe,Northern Europe,SWEDEN,19
+22/23,Europe,Southern Europe,ALBANIA,7
+22/23,Europe,Southern Europe,CROATIA,6
+22/23,Europe,Southern Europe,GIBRALTAR,6
+22/23,Europe,Southern Europe,GREECE,45
+22/23,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",119
+22/23,Europe,Southern Europe,KOSOVO,1
+22/23,Europe,Southern Europe,MALTA,7
+22/23,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,114
+22/23,Europe,Southern Europe,SLOVENIA,2
+22/23,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,108
+22/23,Europe,Western Europe,AUSTRIA,6
+22/23,Europe,Western Europe,BELGIUM,7
+22/23,Europe,Western Europe,FRANCE {INCLUDES CORSICA},78
+22/23,Europe,Western Europe,GERMANY,60
+22/23,Europe,Western Europe,GUERNSEY,3
+22/23,Europe,Western Europe,IRELAND,103
+22/23,Europe,Western Europe,JERSEY,9
+22/23,Europe,Western Europe,LUXEMBOURG,2
+22/23,Europe,Western Europe,NETHERLANDS,75
+22/23,Europe,Western Europe,SWITZERLAND,8
+22/23,Europe/Asia,Eastern Europe,RUSSIA,14
+22/23,North America,Caribbean,ANTIGUA AND BARBUDA,2
+22/23,North America,Caribbean,BAHAMAS,5
+22/23,North America,Caribbean,BARBADOS,5
+22/23,North America,Caribbean,BERMUDA,1
+22/23,North America,Caribbean,BRITISH VIRGIN ISLANDS,2
+22/23,North America,Caribbean,CAYMAN ISLANDS,3
+22/23,North America,Caribbean,DOMINICA,2
+22/23,North America,Caribbean,JAMAICA,10
+22/23,North America,Caribbean,ST KITTS NEVIS,2
+22/23,North America,Caribbean,ST VINCENT AND THE GRENADINES,1
+22/23,North America,Caribbean,TRINIDAD AND TOBAGO,11
+22/23,North America,Central America,BELIZE,1
+22/23,North America,Central America,COSTA RICA,2
+22/23,North America,Central America,PANAMA,2
+22/23,North America,North America,CANADA,22
+22/23,North America,North America,MEXICO,16
+22/23,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,76
+22/23,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,10
+22/23,Oceania,Oceania,FIJI,1
+22/23,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,3
+22/23,South America,South America,ARGENTINA,1
+22/23,South America,South America,BOLIVIA,4
+22/23,South America,South America,BRAZIL,13
+22/23,South America,South America,CHILE,2
+22/23,South America,South America,COLOMBIA,4
+22/23,South America,South America,ECUADOR,8
+22/23,South America,South America,PERU,9
+22/23,South America,South America,VENEZUELA,5
+23/24,Africa,Central Africa,ANGOLA,2
+23/24,Africa,Central Africa,CAMEROON,16
+23/24,Africa,Central Africa,CONGO (DEMOCRATIC REPUBLIC) {FORMERLY ZAIRE},2
+23/24,Africa,East Africa,ERITREA,2
+23/24,Africa,East Africa,KENYA,47
+23/24,Africa,East Africa,MALAWI,3
+23/24,Africa,East Africa,MAURITIUS,40
+23/24,Africa,East Africa,RWANDA,2
+23/24,Africa,East Africa,SOMALIA,9
+23/24,Africa,East Africa,"TANZANIA [TANZANIA, UNITED REPUBLIC OF]",1
+23/24,Africa,East Africa,UGANDA,9
+23/24,Africa,East Africa,ZAMBIA,5
+23/24,Africa,Eastern Africa,BRITISH INDIAN OCEAN TERRITORY,2
+23/24,Africa,Eastern Africa,SEYCHELLES,1
+23/24,Africa,North Africa,ALGERIA,25
+23/24,Africa,North Africa,EGYPT,82
+23/24,Africa,North Africa,LIBYA,4
+23/24,Africa,North Africa,MOROCCO,10
+23/24,Africa,North Africa,SUDAN,6
+23/24,Africa,North Africa,TUNISIA,1
+23/24,Africa,Southern Africa,BOTSWANA,5
+23/24,Africa,Southern Africa,ESWATINI,1
+23/24,Africa,Southern Africa,NAMIBIA,3
+23/24,Africa,Southern Africa,SOUTH AFRICA,18
+23/24,Africa,Southern Africa,ZIMBABWE,18
+23/24,Africa,West Africa,COTE D'IVOIRE,1
+23/24,Africa,West Africa,"GAMBIA, THE",3
+23/24,Africa,West Africa,GHANA,80
+23/24,Africa,West Africa,MAURITANIA,2
+23/24,Africa,West Africa,NIGERIA,843
+23/24,Africa,West Africa,SENEGAL,3
+23/24,Africa,West Africa,SIERRA LEONE,2
+23/24,Asia,Caucasus,GEORGIA,1
+23/24,Asia,Central Asia,KAZAKHSTAN,4
+23/24,Asia,Central Asia,KYRGYZSTAN,2
+23/24,Asia,Central Asia,MONGOLIA,1
+23/24,Asia,East Asia,CHINA,389
+23/24,Asia,East Asia,HONG KONG,84
+23/24,Asia,East Asia,JAPAN,7
+23/24,Asia,East Asia,KOREA (SOUTH),9
+23/24,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",25
+23/24,Asia,Middle East,BAHRAIN,1
+23/24,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",58
+23/24,Asia,Middle East,IRAQ,7
+23/24,Asia,Middle East,ISRAEL,4
+23/24,Asia,Middle East,JORDAN,39
+23/24,Asia,Middle East,KUWAIT,15
+23/24,Asia,Middle East,LEBANON,10
+23/24,Asia,Middle East,OCCUPIED PALESTINIAN TERRITORIES ,1
+23/24,Asia,Middle East,OMAN,24
+23/24,Asia,Middle East,QATAR,21
+23/24,Asia,Middle East,SAUDI ARABIA,62
+23/24,Asia,Middle East,SYRIA,11
+23/24,Asia,Middle East,TURKEY,73
+23/24,Asia,Middle East,UNITED ARAB EMIRATES,1
+23/24,Asia,Middle East,YEMEN,1
+23/24,Asia,South Asia,AFGHANISTAN,9
+23/24,Asia,South Asia,BANGLADESH,194
+23/24,Asia,South Asia,BHUTAN,1
+23/24,Asia,South Asia,INDIA,479
+23/24,Asia,South Asia,MALDIVES,2
+23/24,Asia,South Asia,NEPAL,55
+23/24,Asia,South Asia,PAKISTAN,346
+23/24,Asia,South Asia,SRI LANKA,327
+23/24,Asia,Southeast Asia,BRUNEI (BRUNEI DARUSSALAM),5
+23/24,Asia,Southeast Asia,BURMA/MYANMAR,133
+23/24,Asia,Southeast Asia,CAMBODIA,3
+23/24,Asia,Southeast Asia,INDONESIA,41
+23/24,Asia,Southeast Asia,LAOS,2
+23/24,Asia,Southeast Asia,MALAYSIA,200
+23/24,Asia,Southeast Asia,PHILIPPINES,16
+23/24,Asia,Southeast Asia,SINGAPORE,4
+23/24,Asia,Southeast Asia,THAILAND,117
+23/24,Asia,Southeast Asia,VIETNAM,147
+23/24,Europe,Eastern Europe,BULGARIA,29
+23/24,Europe,Eastern Europe,CYPRUS (NOT OTHERWISE SPECIFIED),1
+23/24,Europe,Eastern Europe,CYPRUS EU,12
+23/24,Europe,Eastern Europe,CZECH REPUBLIC,17
+23/24,Europe,Eastern Europe,HUNGARY,16
+23/24,Europe,Eastern Europe,LATVIA,7
+23/24,Europe,Eastern Europe,LITHUANIA,15
+23/24,Europe,Eastern Europe,"MOLDOVA [MOLDOVA, REPUBLIC OF]",1
+23/24,Europe,Eastern Europe,POLAND,99
+23/24,Europe,Eastern Europe,ROMANIA,36
+23/24,Europe,Eastern Europe,SLOVAKIA,9
+23/24,Europe,Eastern Europe,UKRAINE,1
+23/24,Europe,Northern Europe,DENMARK,3
+23/24,Europe,Northern Europe,ESTONIA,2
+23/24,Europe,Northern Europe,FINLAND,6
+23/24,Europe,Northern Europe,ISLE OF MAN,1
+23/24,Europe,Northern Europe,NORWAY,6
+23/24,Europe,Northern Europe,SWEDEN,8
+23/24,Europe,Southern Europe,ALBANIA,8
+23/24,Europe,Southern Europe,GIBRALTAR,3
+23/24,Europe,Southern Europe,GREECE,28
+23/24,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",67
+23/24,Europe,Southern Europe,MALTA,3
+23/24,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,65
+23/24,Europe,Southern Europe,SLOVENIA,1
+23/24,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,63
+23/24,Europe,Western Europe,AUSTRIA,4
+23/24,Europe,Western Europe,BELGIUM,7
+23/24,Europe,Western Europe,ENGLAND,1
+23/24,Europe,Western Europe,FRANCE {INCLUDES CORSICA},57
+23/24,Europe,Western Europe,GERMANY,29
+23/24,Europe,Western Europe,GUERNSEY,2
+23/24,Europe,Western Europe,IRELAND,63
+23/24,Europe,Western Europe,JERSEY,5
+23/24,Europe,Western Europe,LUXEMBOURG,1
+23/24,Europe,Western Europe,NETHERLANDS,41
+23/24,Europe,Western Europe,SWITZERLAND,9
+23/24,Europe/Asia,Eastern Europe,RUSSIA,14
+23/24,North America,Caribbean,BAHAMAS,4
+23/24,North America,Caribbean,BARBADOS,1
+23/24,North America,Caribbean,BERMUDA,1
+23/24,North America,Caribbean,BRITISH VIRGIN ISLANDS,2
+23/24,North America,Caribbean,CAYMAN ISLANDS,1
+23/24,North America,Caribbean,DOMINICA,1
+23/24,North America,Caribbean,JAMAICA,7
+23/24,North America,Caribbean,ST KITTS NEVIS,1
+23/24,North America,Caribbean,ST LUCIA,1
+23/24,North America,Caribbean,ST VINCENT AND THE GRENADINES,1
+23/24,North America,Caribbean,TRINIDAD AND TOBAGO,10
+23/24,North America,Central America,BELIZE,1
+23/24,North America,Central America,COSTA RICA,1
+23/24,North America,Central America,PANAMA,1
+23/24,North America,North America,CANADA,22
+23/24,North America,North America,MEXICO,13
+23/24,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,46
+23/24,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,7
+23/24,Oceania,Oceania,FIJI,1
+23/24,Oceania,Oceania,NEW ZEALAND/COKELAU/NIUE,3
+23/24,South America,South America,ARGENTINA,2
+23/24,South America,South America,BOLIVIA,3
+23/24,South America,South America,BRAZIL,6
+23/24,South America,South America,CHILE,1
+23/24,South America,South America,COLOMBIA,3
+23/24,South America,South America,ECUADOR,10
+23/24,South America,South America,PERU,6
+23/24,South America,South America,VENEZUELA,1
+24/25,Africa,Central Africa,CAMEROON,5
+24/25,Africa,East Africa,KENYA,12
+24/25,Africa,East Africa,MALAWI,1
+24/25,Africa,East Africa,MAURITIUS,1
+24/25,Africa,East Africa,SOMALIA,2
+24/25,Africa,East Africa,UGANDA,2
+24/25,Africa,East Africa,ZAMBIA,1
+24/25,Africa,Eastern Africa,BRITISH INDIAN OCEAN TERRITORY,2
+24/25,Africa,North Africa,ALGERIA,7
+24/25,Africa,North Africa,EGYPT,10
+24/25,Africa,North Africa,MOROCCO,6
+24/25,Africa,North Africa,SUDAN,1
+24/25,Africa,Southern Africa,BOTSWANA,1
+24/25,Africa,Southern Africa,ESWATINI,1
+24/25,Africa,Southern Africa,ZIMBABWE,2
+24/25,Africa,West Africa,"GAMBIA, THE",1
+24/25,Africa,West Africa,GHANA,28
+24/25,Africa,West Africa,NIGERIA,215
+24/25,Africa,West Africa,SENEGAL,1
+24/25,Asia,Central Asia,KYRGYZSTAN,1
+24/25,Asia,Central Asia,MONGOLIA,1
+24/25,Asia,East Asia,CHINA,19
+24/25,Asia,East Asia,HONG KONG,9
+24/25,Asia,East Asia,JAPAN,1
+24/25,Asia,East Asia,KOREA (SOUTH),1
+24/25,Asia,East Asia,"TAIWAN (TAIWAN, PROVINCE OF CHINA)",6
+24/25,Asia,Middle East,"IRAN (IRAN, ISLAMIC REPUBLIC OF)",32
+24/25,Asia,Middle East,IRAQ,1
+24/25,Asia,Middle East,ISRAEL,2
+24/25,Asia,Middle East,JORDAN,1
+24/25,Asia,Middle East,KUWAIT,6
+24/25,Asia,Middle East,LEBANON,1
+24/25,Asia,Middle East,OMAN,2
+24/25,Asia,Middle East,SAUDI ARABIA,8
+24/25,Asia,Middle East,SYRIA,2
+24/25,Asia,Middle East,TURKEY,29
+24/25,Asia,South Asia,AFGHANISTAN,2
+24/25,Asia,South Asia,BANGLADESH,47
+24/25,Asia,South Asia,INDIA,158
+24/25,Asia,South Asia,NEPAL,19
+24/25,Asia,South Asia,PAKISTAN,97
+24/25,Asia,South Asia,SRI LANKA,95
+24/25,Asia,Southeast Asia,BURMA/MYANMAR,15
+24/25,Asia,Southeast Asia,INDONESIA,5
+24/25,Asia,Southeast Asia,MALAYSIA,14
+24/25,Asia,Southeast Asia,PHILIPPINES,4
+24/25,Asia,Southeast Asia,SINGAPORE,1
+24/25,Asia,Southeast Asia,THAILAND,33
+24/25,Asia,Southeast Asia,VIETNAM,43
+24/25,Europe,Eastern Europe,BULGARIA,3
+24/25,Europe,Eastern Europe,CYPRUS EU,1
+24/25,Europe,Eastern Europe,CZECH REPUBLIC,5
+24/25,Europe,Eastern Europe,HUNGARY,1
+24/25,Europe,Eastern Europe,LATVIA,1
+24/25,Europe,Eastern Europe,LITHUANIA,1
+24/25,Europe,Eastern Europe,POLAND,12
+24/25,Europe,Eastern Europe,ROMANIA,2
+24/25,Europe,Eastern Europe,UKRAINE,1
+24/25,Europe,Northern Europe,FINLAND,1
+24/25,Europe,Northern Europe,NORWAY,2
+24/25,Europe,Northern Europe,SWEDEN,2
+24/25,Europe,Southern Europe,ALBANIA,2
+24/25,Europe,Southern Europe,GREECE,5
+24/25,Europe,Southern Europe,"ITALY {INCLUDES SARDINA, SICILY}",9
+24/25,Europe,Southern Europe,PORTUGAL/MADEIRA/AZORES,4
+24/25,Europe,Southern Europe,SPAIN/CANARY ISLANDS/CEUTA/MELILLA,5
+24/25,Europe,Western Europe,BELGIUM,1
+24/25,Europe,Western Europe,FRANCE {INCLUDES CORSICA},3
+24/25,Europe,Western Europe,GERMANY,2
+24/25,Europe,Western Europe,IRELAND,7
+24/25,Europe,Western Europe,NETHERLANDS,3
+24/25,Europe,Western Europe,SWITZERLAND,3
+24/25,North America,Caribbean,JAMAICA,2
+24/25,North America,Caribbean,TRINIDAD AND TOBAGO,1
+24/25,North America,North America,CANADA,3
+24/25,North America,North America,MEXICO,1
+24/25,North America,North America,UNITED STATES OF AMERICA/US VIRGIN ISLES,13
+24/25,Oceania,Oceania,AUSTRALIA/CHRISTMAS/KEELING ISLANDS/COCOS ISLANDS,2
+24/25,Oceania,Oceania,FIJI,1
+24/25,South America,South America,BRAZIL,1
+24/25,South America,South America,COLOMBIA,1
+24/25,South America,South America,PERU,1
